@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+body{
+    background-color: black;
+    color: white;
+}
+#logoZapSelling img{
+    display: block;
+    max-width: 120px;
+    margin: auto;
+}
+footer{
+    margin-top: 60vh;
+}
