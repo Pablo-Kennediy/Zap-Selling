@@ -1,51 +1,52 @@
-*{
+* {
     margin: 0;
     padding: 0;
     text-align: center;
 }
-body{
+
+body {
     background-color: black;
     color: white;
 }
-#logoZapSelling img{
+
+#logoZapSelling img {
     display: block;
     max-width: 120px;
     margin: auto;
+    float: right;
 }
-footer{
+
+footer {
     margin-top: 60vh;
 }
-  
-  .container {
+
+.container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-  }
-  
-  .login {
-    max-width: 600px;
-    height: 300px;
+}
+
+.login {
+    max-width: 500px;
     margin: auto;
     margin-top: 35vh;
+    padding: 25px;
     background-color: #ffffff13;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 0, 0, 0.014);
-  }
-  
-  input {
-    max-width: 500px;
+}
+
+input {
+    max-width: 400px;
     height: 40px;
-    border: none;
-    outline: none;
     padding: 10px;
     font-size: 16px;
-  }
-  
-  input[type="submit"] {
+}
+
+input[type="submit"] {
     background-color: #0c111a;
     color: #ffffff;
     font-size: 18px;
     cursor: pointer;
-  }
+}
