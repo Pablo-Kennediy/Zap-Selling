@@ -4,7 +4,10 @@
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+a{
+    text-decoration: none;
+    color: white;
+}
 body {
     background-color: black;
     color: white;
@@ -12,25 +15,32 @@ body {
 
 #logoZapSelling img {
     display: block;
-    max-width: 120px;
+    max-width: 200px;
     margin: auto;
 }
-
-.login {
-    max-width: 500px;
-    margin: auto;
+.container{
+    max-width: 385px;
     margin-top: 25px;
-    padding: 25px;
+    margin: auto;
+  
+}
+.login {
+ margin: 15px;
     background-color: #ffffff13;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 0, 0, 0.014);
-}
 
+   }
+form{
+    padding: 15px;
+}
 input {
     max-width: 400px;
     height: 40px;
     padding: 10px;
+    margin: 10px;
     font-size: 16px;
+    border-radius: 25px;
 }
 
 input[type="submit"] {
