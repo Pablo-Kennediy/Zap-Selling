@@ -50,8 +50,15 @@ input[type="submit"] {
     cursor: pointer;
 }
 footer{
+    text-align: center;
     padding: 15px;
 }
-iframe{
-
+article{
+    float: left;
+    max-width: 300px;
+    height: 100vh;
+}
+label{
+    display: flex;
+    margin: 15px;
 }
