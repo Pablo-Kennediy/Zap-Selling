@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Zap Selling",
+  "version": "1.0.0",
+
+  "permissions": [
+    "tabs",
+    "bookmarks"
+  ],
+
+  "host_permissions": [
+    "http://127.0.0.1:5500/": {
+      "default_popup": "index.html"
+    }
+  ]
+}
