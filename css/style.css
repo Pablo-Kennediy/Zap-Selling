@@ -50,7 +50,6 @@ input[type="submit"] {
     cursor: pointer;
 }
 footer{
-    text-align: center;
     padding: 15px;
 }
 article{
@@ -60,5 +59,4 @@ article{
 }
 label{
     display: flex;
-    margin: 15px;
 }
