@@ -67,14 +67,12 @@ article {
     display: block;
     float: left;
     max-width: 300px;
-    height: 100vh;
 }
 
 section {
     display: block;
     position: relative;
     padding-bottom: 400px;
-    height: 100vh;
 }
 section#comunidade{
     margin-top: 100vh;
@@ -160,6 +158,9 @@ max-width: 280px;
 }
 #import img{
     max-width: 285px;
+}
+#trash{
+    margin-top: 400px;
 }
 #trash img {
     max-width: 285px;
