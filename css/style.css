@@ -135,8 +135,6 @@ max-width: 300px;
     margin: auto;
     max-width: 400px;
     padding: 15px;
-    border-radius: 15px;
-    border: 1px white solid;
 }
 #diario img {
     max-width: 200px;
@@ -164,4 +162,13 @@ max-width: 280px;
 }
 #trash img {
     max-width: 285px;
+}
+section img{
+    transition-duration: 1s;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+  transform-origin: 50% 50%;
+}
+ img:hover{
+    transform: translate(-10px, 0);
 }
