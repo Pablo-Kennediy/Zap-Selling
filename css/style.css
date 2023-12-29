@@ -89,6 +89,7 @@ section#updates{
 section#updates img {
     display: block;
     max-width: 185px;
+    margin: auto;
 }
 
 section p {
@@ -127,4 +128,39 @@ position: absolute;
 
 #newpageimgdois img{
     max-width: 50px;
+}
+#taskList img {
+    float: right;
+max-width: 300px;
+}
+#taskList div{
+    margin: auto;
+    max-width: 400px;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px white solid;
+}
+#diario img {
+    max-width: 200px;
+}
+#listaDeLeituras img {
+    max-width: 300px;
+}
+#listaDeLeituras h2 > img{
+    max-width: 50px;
+}
+#addAPage img{
+max-width: 280px;
+}
+#teamSpace img{
+    max-width: 285px;
+}
+#templates img {
+    max-width: 285px;
+}
+#import img{
+    max-width: 285px;
+}
+#trash img {
+    max-width: 285px;
 }
