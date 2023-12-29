@@ -59,17 +59,6 @@ header picture {
     width: 100%;
 }
 
-button#deVoltaAoTopo {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin: 15px;
-    border-radius: 25px;
-}
-button#deVoltaAoTopo a{
-position: absolute;
-}
-
 footer {
     padding: 15px;
 }
@@ -86,6 +75,9 @@ section {
     position: relative;
     padding-bottom: 400px;
     height: 100vh;
+}
+section#comunidade{
+    margin-top: 100vh;
 }
 section#updates{
     min-width: 300px;
@@ -109,4 +101,17 @@ section#config{
 label {
     display: flex;
     padding: 5px;
+}
+button#deVoltaAoTopo {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
+    border-radius: 25px;
+}
+button#deVoltaAoTopo img{
+    max-width: 65px;
+}
+button#deVoltaAoTopo a{
+position: absolute;
 }
