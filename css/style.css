@@ -79,6 +79,9 @@ section {
 section#comunidade{
     margin-top: 100vh;
 }
+section#comunidade img{
+    max-width: 285px;
+}
 section#updates{
     min-width: 300px;
 }
@@ -117,4 +120,11 @@ position: absolute;
 }
 #first img{
     max-width: 185px;
+}
+#newpage img{
+    max-width: 185px;
+}
+
+#newpageimgdois img{
+    max-width: 50px;
 }
