@@ -4,6 +4,7 @@
 }
 
 a {
+    position: relative;
     text-decoration: none;
     color: white;
 }
@@ -23,7 +24,6 @@ body {
     max-width: 385px;
     margin-top: 25px;
     margin: auto;
-
 }
 
 .login {
@@ -31,7 +31,6 @@ body {
     background-color: #ffffff13;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 0, 0, 0.014);
-
 }
 
 form {
@@ -59,17 +58,16 @@ header{
 header picture {
     width: 100%;
 }
-header picture#deVoltaAoTopo{
-    position: relative;
-}
-header picture#deVoltaAoTopo a{
-    width: 100%;
-}
-picture#deVoltaAoTopo img {
-    display: block;
-    top: 80%;
-    right: 0;
+
+button#deVoltaAoTopo {
     position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
+    border-radius: 25px;
+}
+button#deVoltaAoTopo a{
+position: absolute;
 }
 
 footer {
