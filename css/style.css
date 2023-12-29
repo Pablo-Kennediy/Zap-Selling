@@ -115,3 +115,6 @@ button#deVoltaAoTopo img{
 button#deVoltaAoTopo a{
 position: absolute;
 }
+#first img{
+    max-width: 185px;
+}
