@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="imagens/logo Zap Selling.png" type="image/x-icon">
     <title>ZAP SELLING</title>
 </head>
-
 <style>
     * {
         text-align: center;
@@ -49,11 +48,8 @@
         padding: 15px;
     }
 
-    input {
+    label input {
         max-width: 400px;
-        height: 40px;
-        padding: 10px;
-        margin: 10px;
         font-size: 16px;
         border-radius: 25px;
     }
@@ -78,15 +74,13 @@
     }
 
     article {
-        display: block;
-        float: left;
+        display: inline-block;
         max-width: 300px;
     }
 
     section {
         display: block;
         position: relative;
-        padding-bottom: 400px;
     }
 
     section#comunidade img {
@@ -111,7 +105,6 @@
 
     section#config {
         border-bottom: solid white 2px;
-        height: 0vh;
     }
 
     label {
@@ -218,13 +211,19 @@
         list-style: none;
         margin: 15px;
     }
+    #input img{
+        max-width: 35px;
+    }
 </style>
 
 <body>
-    <header>
+    <label id="input" for="">
+        <img src="lupa.png" alt="">
+        <input type="text" name="" id="" placeholder="Pesquisa">
+    </label>
         <nav>
             <ul>
-                <a href="index.html">
+                <a href="navegação.html">
                     <li>
                         HOME
                     </li>
@@ -234,20 +233,20 @@
                         AUTO-BOT
                     </li>
                 </a>
-                <a href="leadON.html">
+                <a href="https://api.whatsapp.com/send?phone=5519986030166&text=TESTE%0ASuporte%20!!!%0ABom%20dia,%20%0ATenho%20um%20grave%20problema%20com%20a%20plataforma%20e%20preciso%20apoio%20imediato.">
                     <li>
                         SUPORTE
                     </li>
                 </a>
             </ul>
         </nav>
+        <picture id="logoZapSelling">
+            <img src="imagens/logo Zap Selling.png" alt="">
+        </picture>
         <label id="first" for="">
             My job
             <img src="imagens/my job.png" alt="">
         </label>
-        <picture id="logoZapSelling">
-            <img src="imagens/logo Zap Selling.png" alt="">
-        </picture>
         <h1>
             ZAP SELLING
         </h1>
