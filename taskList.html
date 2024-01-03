@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="imagens/logo Zap Selling.png" type="image/x-icon">
     <title>ZAP SELLING</title>
 </head>
+<!-- Nota, qualquer atualização em css - front resulta Control C + V cascata para todos HTML, para de esquecer por favor.  -->
 <style>
     * {
         text-align: center;
@@ -109,7 +110,6 @@
 
     label {
         padding: 15px;
-        width: 45%;
     }
 
     button#deVoltaAoTopo {
@@ -124,10 +124,6 @@
 
     button#deVoltaAoTopo a {
         position: absolute;
-    }
-
-    #first {
-        float: right;
     }
 
     #first img {
@@ -171,7 +167,7 @@
     }
 
     #teamSpace img {
-        max-width: 285px;
+        max-width: 185px;
     }
 
     #templates img {
@@ -224,10 +220,15 @@
     ul#esteiraDeAquecimentoo li {
         display: block;
     }
-    ul#esteiraDeAquecimentoo li img{
-         max-width: 35px;
-    }
 
+    ul#esteiraDeAquecimentoo li img {
+        max-width: 35px;
+    }
+    ul#margin-left {
+        float: left;
+        padding: 15px;
+        border-right: gray 1px solid;
+    }
 </style>
 
 <body>
@@ -266,40 +267,42 @@
         <h1>
             ZAP SELLING
         </h1>
+        <ul id="margin-left">
+            <p for="">
+                <a href="templates.html">Modelos</a>
+            </p>
+            <p for="">
+                <a href="updates.html">Atualizações de fixeiro</a>
+            </p>
+            <p for="">
+                <a href="diario.html">Diário</a>
+            </p>
+            <p for="">
+                <a href="import.html">Importar</a>
+            </p>
+            <p for="">
+                <a href="trash.html">Lixo temporário</a>
+            </p>
+        </ul>
+        <label for="">
+            <a href="membros.html">Membros</a>
+        </label>
+        <label for="">
+            <a href="taskList.html">Lista de Tarefas</a>
+        </label>
+        <label for="">
+            <a href="listaDeLeituras.html">Lista de leituras</a>
+        </label>
+        <label for="">
+            <a href="esteiraDeAquecimento.html">Esteira de aquecimento</a>
+        </label>
+        <label for="">
+            <a href="addAPage.html">Adicionar amigo</a>
+        </label>
+        <label for="">
+            <a href="teamSpace.html">Grupo</a>
+        </label>
     </header>
-    <label for="">
-        <a href="updates.html">Atualizações de fixeiro</a>
-    </label>
-    <label for="">
-        <a href="membros.html">Membros</a>
-    </label>
-    <label for="">
-        <a href="taskList.html">Lista de Tarefas</a>
-    </label>
-    <label for="">
-        <a href="diario.html">Diário</a>
-    </label>
-    <label for="">
-        <a href="listaDeLeituras.html">Lista de leituras</a>
-    </label>
-    <label for="">
-        <a href="esteiraDeAquecimento.html">Esteira de aquecimento</a>
-    </label>
-    <label for="">
-        <a href="addAPage.html">Adicionar amigo</a>
-    </label>
-    <label for="">
-        <a href="teamSpace.html">Grupo</a>
-    </label>
-    <label for="">
-        <a href="templates.html">Modelos</a>
-    </label>
-    <label for="">
-        <a href="import.html">Importar</a>
-    </label>
-    <label for="">
-        <a href="trash.html">Lixo temporário</a>
-    </label>
     <!-- Task List, ainda não entendi qual é o proposito dessa parte... -->
     <section id="taskList">
         <img src="imagens/avaliacao.png" alt="">
