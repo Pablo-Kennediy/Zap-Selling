@@ -52,6 +52,7 @@
         max-width: 400px;
         font-size: 16px;
         border-radius: 25px;
+        padding: 5px;
     }
 
     input[type="submit"] {
@@ -206,15 +207,19 @@
         display: inline-block;
         list-style: none;
         margin: 15px;
+        padding: 10px;
+        border-radius: 15px;
+        border: 1px solid gray;
     }
 
     #input img {
         max-width: 35px;
     }
 
-
     ul#esteiraDeAquecimentoo {
         margin-top: 100px;
+        max-width: 500px;
+        margin: auto;
     }
 
     ul#esteiraDeAquecimentoo li {
@@ -224,15 +229,15 @@
     ul#esteiraDeAquecimentoo li img {
         max-width: 35px;
     }
+    nav{
+        display: flex;
+    }
+
 </style>
 
 <body>
     <header>
-        <label id="input" for="">
-            <img src="imagens/lupa.png" alt="">
-            <input type="text" name="" id="" placeholder="Pesquisa">
-        </label>
-        <nav>
+              <nav>
             <ul>
                 <a href="leadON.html">
                     <li>
@@ -251,8 +256,12 @@
                     </li>
                 </a>
             </ul>
+            <label id="input" for="">
+                <img src="imagens/lupa.png" alt="">
+                <input type="text" name="" id="" placeholder="Pesquisa">
+            </label>
         </nav>
-            <picture id="logoZapSelling">
+        <picture id="logoZapSelling">
             <img src="imagens/logo Zap Selling.png" alt="">
             <h1 style="text-align: center;">
                 ZAP SELLING
@@ -262,7 +271,7 @@
                 <img src="imagens/my job.png" alt="">
             </label>
         </picture>
-                             <label for="">
+        <label for="">
             <a href="#topVH">Membros</a>
         </label>
         <label for="">
@@ -272,7 +281,7 @@
             <a href="listaDeLeituras.html">Lista de leituras</a>
         </label>
         <label for="">
-            <a href="esteiraDeAquecimento.html">Esteira de aquecimento</a>
+            <a href="esteiraDeAquecimento.html">Historico</a>
         </label>
         <label for="">
             <a href="addAPage.html">Adicionar amigo</a>
@@ -280,15 +289,13 @@
         <label for="">
             <a href="teamSpace.html">Grupo</a>
         </label>
+        <label for="">
+            <a href="templates.html">Modelos</a>
+        </label>
         <ul id="">
-            <p for="" class="margin-left">
-                <a href="templates.html">Modelos</a>
-            </p>
+
             <p for="">
-                <a href="updates.html">Atualizações de fixeiro</a>
-            </p>
-            <p for="">
-                <a href="diario.html">Diário</a>
+                <a href="updates.html">Gerenciador de arquivos</a>
             </p>
             <p for="">
                 <a href="import.html">Importar</a>
