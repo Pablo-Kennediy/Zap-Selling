@@ -63,7 +63,7 @@
     }
 
     header {
-        position: static;
+        margin-bottom: 25px;
     }
 
     header picture {
@@ -84,6 +84,7 @@
         display: block;
         position: relative;
         text-align: center;
+        margin-top: 100px;
     }
 
     section#comunidade img {
@@ -111,7 +112,7 @@
     }
 
     label {
-        padding: 15px;
+        padding: 10px;
     }
 
     button#deVoltaAoTopo {
@@ -203,6 +204,10 @@
         border-radius: 25px;
     }
 
+    #input img {
+        max-width: 35px;
+    }
+
     ul li {
         display: inline-block;
         list-style: none;
@@ -212,62 +217,72 @@
         border: 1px solid gray;
     }
 
-    #input img {
-        max-width: 35px;
+    nav {
+        position: relative;
+        height: 45px;
+        background-color: #000;
+        color: #fff;
+        max-width: 300px;
+        left: 50%;
     }
 
-    ul#esteiraDeAquecimentoo {
-        margin-top: 100px;
-        max-width: 500px;
-        margin: auto;
+    nav ul {
+        display: none;
     }
 
-    ul#esteiraDeAquecimentoo li {
+    nav ul li {
+        list-style: none;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    nav:hover ul {
         display: block;
     }
 
-    ul#esteiraDeAquecimentoo li img {
-        max-width: 35px;
-    }
-    nav{
+    div#menuTop {
         display: flex;
+        float: right;
     }
 
+    div#menuTop p {
+        margin: 10px;
+    }
 </style>
 
 <body>
     <header>
-              <nav>
-            <ul>
-                <a href="leadON.html">
-                    <li>
-                        HOME
-                    </li>
-                </a>
-                <a href="#">
-                    <li>
-                        AUTO-BOT
-                    </li>
-                </a>
-                <a
-                    href="https://api.whatsapp.com/send?phone=5519986030166&text=TESTE%0ASuporte%20!!!%0ABom%20dia,%20%0ATenho%20um%20grave%20problema%20com%20a%20plataforma%20e%20preciso%20apoio%20imediato.">
-                    <li>
-                        SUPORTE
-                    </li>
-                </a>
-            </ul>
-            <label id="input" for="">
-                <img src="imagens/lupa.png" alt="">
-                <input type="text" name="" id="" placeholder="Pesquisa">
-            </label>
-        </nav>
+        <div id="menuTop">
+            <a href="leadON.html">
+                <p>
+                    HOME
+                </p>
+            </a>
+            <a href="#">
+                <p>
+                    AUTO-BOT
+                </p>
+            </a>
+            <a
+                href="https://api.whatsapp.com/send?phone=5519986030166&text=TESTE%0ASuporte%20!!!%0ABom%20dia,%20%0ATenho%20um%20grave%20problema%20com%20a%20plataforma%20e%20preciso%20apoio%20imediato.">
+                <p>
+                    SUPORTE
+                </p>
+            </a>
+        </div>
+        <label id="input" for="">
+            <img src="imagens/lupa.png" alt="">
+            <input type="text" name="" id="" placeholder="Pesquisa">
+        </label>
         <picture id="logoZapSelling">
             <img src="imagens/logo Zap Selling.png" alt="">
             <h1 style="text-align: center;">
                 ZAP SELLING
             </h1>
             <label id="first" for="">
-                My job
                 <img src="imagens/my job.png" alt="">
             </label>
         </picture>
@@ -278,32 +293,30 @@
             <a href="taskList.html">Lista de Tarefas</a>
         </label>
         <label for="">
-            <a href="listaDeLeituras.html">Lista de leituras</a>
-        </label>
-        <label for="">
             <a href="esteiraDeAquecimento.html">Historico</a>
         </label>
         <label for="">
             <a href="addAPage.html">Adicionar amigo</a>
         </label>
         <label for="">
-            <a href="teamSpace.html">Grupo</a>
-        </label>
-        <label for="">
             <a href="templates.html">Modelos</a>
         </label>
-        <ul id="">
-
-            <p for="">
-                <a href="updates.html">Gerenciador de arquivos</a>
-            </p>
-            <p for="">
-                <a href="import.html">Importar</a>
-            </p>
-            <p for="">
-                <a href="trash.html">Lixo temporário</a>
-            </p>
-        </ul>
+        <label for="">
+            Gerenciador de arquivos
+        </label>
+        <nav>
+            <ul>
+                <li>
+                    <a href="updates.html">Importar</a>
+                </li>
+                <li>
+                    <a href="">Lixo</a>
+                </li>
+                <li for="">
+                    <a href="teamSpace.html">Grupo</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <div class="interface">
         <section>
