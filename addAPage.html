@@ -80,14 +80,6 @@
         text-align: center;
     }
 
-    section#comunidade img {
-        max-width: 285px;
-    }
-
-    section#updates {
-        min-width: 300px;
-    }
-
     section#updates img {
         display: block;
         max-width: 185px;
@@ -100,10 +92,18 @@
         padding: 5px;
     }
 
+    section#comunidade img {
+        max-width: 285px;
+    }
+
+    section#updates {
+        min-width: 300px;
+    }
+
     section#config {
         border-bottom: solid white 2px;
     }
-
+ 
     label {
         padding: 10px;
     }
@@ -237,6 +237,9 @@
     }
 
     div#menuTop p {
+        border: solid gray 1px;
+        border-radius: 15px;
+        padding: 5px;
         margin: 10px;
     }
 
@@ -261,6 +264,13 @@
         max-width: 400px;
         margin: auto;
     }
+    section#addAPage div{
+        display: inline-block;
+        max-width: 380px;
+        border: solid gray 2px;
+        padding: 10px;
+        border-radius: 15px;
+    }
 </style>
 
 <body>
@@ -268,72 +278,81 @@
         <label id="first" for="">
             <img src="imagens/my job.png" alt="">
         </label>
-    <div id="menuTop">
-        <a href="leadON.html">
-            <p>
-                HOME
-            </p>
-        </a>
-        <a href="#">
-            <p>
-                AUTO-BOT
-            </p>
-        </a>
-        <a
-            href="https://api.whatsapp.com/send?phone=5519986030166&text=TESTE%0ASuporte%20!!!%0ABom%20dia,%20%0ATenho%20um%20grave%20problema%20com%20a%20plataforma%20e%20preciso%20apoio%20imediato.">
-            <p>
-                SUPORTE
-            </p>
-        </a>
-    </div>
+        <div id="menuTop">
+            <a href="leadON.html">
+                <p>
+                    HOME
+                </p>
+            </a>
+            <a href="#">
+                <p>
+                    AUTO-BOT
+                </p>
+            </a>
+            <a
+                href="https://api.whatsapp.com/send?phone=5519986030166&text=TESTE%0ASuporte%20!!!%0ABom%20dia,%20%0ATenho%20um%20grave%20problema%20com%20a%20plataforma%20e%20preciso%20apoio%20imediato.">
+                <p>
+                    SUPORTE
+                </p>
+            </a>
+        </div>
         <label id="input" for="">
-        <img src="imagens/lupa.png" alt="">
-        <input type="text" name="" id="" placeholder="Pesquisa">
-    </label>
-       
-    <picture id="logoZapSelling">
-        <img src="imagens/logo Zap Selling.png" alt="">
-    </picture>
-    <label for="">
-        <a href="membros.html">Membros</a>
-    </label>
-    <label for="">
-        <a href="taskList.html">Lista de Tarefas</a>
-    </label>
-    <label for="">
-        <a href="heatingMat.html">Historico</a>
-    </label>
-    <label for="">
-        <a href="addAPage.html">Adicionar amigo</a>
-    </label>
-    <label for="">
-        <a href="templates.html">Modelos</a>
-    </label>
-    <label for="">
-        Gerenciador de arquivos
-    </label>
-    <nav>
-        <picture id="setasDuplas">
-            <img src="imagens/setas-duplas-para-baixo.png" alt="">
+            <img src="imagens/lupa.png" alt="">
+            <input type="text" name="" id="" placeholder="Pesquisa">
+        </label>
+
+        <picture id="logoZapSelling">
+            <img src="imagens/logo Zap Selling.png" alt="">
         </picture>
-        <ul>
-            <li>
-                <a href="updates.html">Importar</a>
-            </li>
-            <li>
-                <a href="">Lixo</a>
-            </li>
-            <li for="">
-                <a href="teamSpace.html">Grupo</a>
-            </li>
-        </ul>
-    </nav>
-</header>
+        <label for="">
+            <a href="membros.html">Membros</a>
+        </label>
+        <label for="">
+            <a href="taskList.html">Lista de Tarefas</a>
+        </label>
+        <label for="">
+            <a href="heatingMat.html">Historico</a>
+        </label>
+        <label for="">
+            <a href="addAPage.html">Adicionar amigo</a>
+        </label>
+        <label for="">
+            <a href="templates.html">Modelos</a>
+        </label>
+        <label for="">
+            Gerenciador de arquivos
+        </label>
+        <nav>
+            <picture id="setasDuplas">
+                <img src="imagens/setas-duplas-para-baixo.png" alt="">
+            </picture>
+            <ul>
+                <li>
+                    <a href="updates.html">Importar</a>
+                </li>
+                <li>
+                    <a href="">Lixo</a>
+                </li>
+                <li for="">
+                    <a href="teamSpace.html">Grupo</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <!-- Uma nova pagina ? este está impossivel, ainda não entendi qual é o proposito dessa parte... -->
     <section id="addAPage">
-        <p>
-            Aqui uma grade BD, com as informações padrão aparecendo de forma clara.
-        </p>
+        <h2>
+            Selecione uma das opções e começe a desenvolver o seu script de venda.
+        </h2>
+        <div>
+            Inicio
+        </div>
+        <div>
+            Desenvolvimento
+        </div>
+        <div>
+            Conclusão
+        </div>
     </section>
     <footer>
         <p for="">
