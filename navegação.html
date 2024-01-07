@@ -66,10 +66,12 @@
         position: relative;
         text-align: center;
     }
-    section#updates{
+
+    section#updates {
         margin: auto;
         max-width: 400px;
     }
+
     section#updates img {
         display: block;
         max-width: 85px;
@@ -168,13 +170,13 @@
 
     img:hover {
         transform: translate(-10px, 0);
+        transition-duration: 3s;
     }
 
     button {
         margin: 15px;
         border-radius: 25px;
     }
-
 
     ul li {
         display: inline-block;
@@ -186,11 +188,9 @@
     }
 
     nav {
-        position: relative;
         background-color: #000;
         color: #fff;
-        max-width: 385px;
-        left: 10%;
+        max-width: 50px;
     }
 
     nav ul {
@@ -208,6 +208,7 @@
 
     nav:hover ul {
         display: block;
+
     }
 
     div#menuTop {
@@ -234,9 +235,8 @@
 
     picture#setasDuplas img {
         display: block;
-        margin: auto;
         margin-top: 15px;
-        max-width: 20px;
+        width: 35px;
     }
 
     ul#esteiraDeAquecimentoo img {
@@ -250,8 +250,8 @@
 
     #logoZapSelling img {
         display: block;
-        max-width: 400px;
-        margin: auto;
+        max-width: 120px;
+        float: right;
     }
 
     section#addAPage div {
@@ -265,17 +265,22 @@
     li {
         list-style: none;
     }
-div#pop li{
-    margin: auto;
-    text-align: center;
-    margin-top: 5px;
-    max-width: 285px;
-    border: 2px solid gray;
-    border-radius: 15px;
-}
+
+    div#pop li {
+        margin: auto;
+        text-align: center;
+        margin-top: 5px;
+        max-width: 285px;
+        border: 2px solid gray;
+        border-radius: 15px;
+    }
 </style>
+
 <body>
     <header>
+        <picture id="logoZapSelling">
+            <img src="imagens/logo Zap Selling.png" alt="">
+        </picture>
         <label id="first" for="">
             <img src="imagens/my job.png" alt="">
         </label>
@@ -301,18 +306,11 @@ div#pop li{
             <img src="imagens/lupa.png" alt="">
             <input type="text" name="" id="" placeholder="Pesquisa">
         </label>
-
-        <picture id="logoZapSelling">
-            <img src="imagens/logo Zap Selling.png" alt="">
-        </picture>
         <label for="">
             <a href="meusScripts.html">Script</a>
         </label>
         <label for="">
             <a href="templates.html">Modelos</a>
-        </label>
-        <label for="">
-            Gerenciador de arquivos
         </label>
         <nav>
             <picture id="setasDuplas">
