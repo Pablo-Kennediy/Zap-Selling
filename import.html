@@ -66,10 +66,12 @@
         position: relative;
         text-align: center;
     }
-    section#updates{
+
+    section#updates {
         margin: auto;
         max-width: 400px;
     }
+
     section#updates img {
         display: block;
         max-width: 85px;
@@ -160,7 +162,7 @@
     }
 
     section img {
-        transition-duration: 1s;
+        transition-duration: 15s;
         transition-property: transform;
         transition-timing-function: ease-in-out;
         transform-origin: 50% 50%;
@@ -168,6 +170,7 @@
 
     img:hover {
         transform: translate(-10px, 0);
+        transition-duration: 2s;
     }
 
     button {
@@ -186,11 +189,9 @@
     }
 
     nav {
-        position: relative;
         background-color: #000;
         color: #fff;
-        max-width: 385px;
-        left: 10%;
+        max-width: 50px;
     }
 
     nav ul {
@@ -234,7 +235,6 @@
 
     picture#setasDuplas img {
         display: block;
-        margin: auto;
         margin-top: 15px;
         max-width: 20px;
     }
@@ -250,8 +250,7 @@
 
     #logoZapSelling img {
         display: block;
-        max-width: 400px;
-        margin: auto;
+        max-width: 120px;
     }
 
     section#addAPage div {
@@ -265,21 +264,26 @@
     li {
         list-style: none;
     }
-div#pop li{
-    margin: auto;
-    text-align: center;
-    margin-top: 5px;
-    max-width: 285px;
-    border: 2px solid gray;
-    border-radius: 15px;
-}
+
+    div#pop li {
+        margin: auto;
+        text-align: center;
+        margin-top: 5px;
+        max-width: 285px;
+        border: 2px solid gray;
+        border-radius: 15px;
+    }
 </style>
+
 <body>
     <header>
+        <picture id="logoZapSelling">
+            <img src="imagens/logo Zap Selling.png" alt="">
+        </picture>
         <label id="first" for="">
             <img src="imagens/my job.png" alt="">
-        </label>
-        <div id="menuTop">
+            </label>
+                 <div id="menuTop">
             <a href="navegação.html">
                 <p>
                     HOME
@@ -301,18 +305,11 @@ div#pop li{
             <img src="imagens/lupa.png" alt="">
             <input type="text" name="" id="" placeholder="Pesquisa">
         </label>
-
-        <picture id="logoZapSelling">
-            <img src="imagens/logo Zap Selling.png" alt="">
-        </picture>
-        <label for="">
+             <label for="">
             <a href="meusScripts.html">Script</a>
         </label>
         <label for="">
             <a href="templates.html">Modelos</a>
-        </label>
-        <label for="">
-            Gerenciador de arquivos
         </label>
         <nav>
             <picture id="setasDuplas">
