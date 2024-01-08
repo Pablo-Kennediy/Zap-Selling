@@ -274,16 +274,24 @@
         border: 2px solid gray;
         border-radius: 15px;
     }
+
     div#comunidade2 {
         display: flex;
         margin: 15px;
-        border-top: 1px solid gray ;
+        border-top: 1px solid gray;
         border-bottom: 1px solid gray;
         padding: 15px;
     }
+
     div#comunidade2 img {
         display: block;
         max-width: 85px;
+    }
+    picture#feed img{
+        display: block;
+        margin: auto;
+        max-width: 900px;
+        border-radius: 15px;
     }
 </style>
 
@@ -318,9 +326,6 @@
             <input type="text" name="" id="" placeholder="Pesquisa">
         </label>
         <label for="">
-            <a href="meusScripts.html">Script</a>
-        </label>
-        <label for="">
             <a href="templates.html">Modelos</a>
         </label>
         <nav>
@@ -341,6 +346,7 @@
         </nav>
     </header>
 
+
     <!-- Aréa dos membros -->
     <section id="comunidade">
         <h2 id="topVH">
@@ -349,8 +355,8 @@
         <img src="imagens/equipe.png" alt="">
         <!-- Acho que seria leral 3 quadrados representando 3 lids -->
     </section>
-     <!-- Updates -->
-     <section id="updates">
+    <!-- Updates -->
+    <section id="updates">
         <h2 id="topVH">
             Updates
         </h2>
@@ -363,14 +369,21 @@
         </p>
     </section>
     <aside>
-        <div id="comunidade2">
-<img src="imagens/my job.png" alt="">
-<img src="imagens/pirata.png" alt="">
-<img src="imagens/genero-neutro.png" alt="">
-<img src="imagens/homem.png" alt="">
-        </div>
-        <div style="float: right;">
-gag
+        <div>
+            <h1>Feed de Noticias</h1>
+            <div id="comunidade2">
+                <img src="imagens/my job.png" alt="">
+                <img src="imagens/pirata.png" alt="">
+                <img src="imagens/genero-neutro.png" alt="">
+                <img src="imagens/homem.png" alt="">
+            </div>
+            <h1>No geral, o WhatsApp Web é uma ferramenta poderosa que permite que os usuários do WhatsApp tenham uma experiência mais completa e produtiva.</h1>
+<p>
+    O WhatsApp Web permite aos usuários, acessarem suas mensagens e conversas pelo computador, tornando mais simples responder mensagens e gerenciar discussões enquanto usam o computador. <br> Essa conveniência facilita a comunicação e mantém os usuários conectados de forma mais eficaz.
+</p>
+           <picture id="feed">
+            <img src="imagens/feed1.jpg" alt="">
+           </picture>
         </div>
     </aside>
 
