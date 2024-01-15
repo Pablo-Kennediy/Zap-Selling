@@ -23,4 +23,5 @@ O futuro das vendas
 A ferramenta desenvolvida por Hugo, Pablo e Ryan é um exemplo de como a tecnologia está mudando o mundo das vendas. O WhatsApp é uma plataforma poderosa que pode ser usada para atingir um grande número de pessoas. A automatização de mensagens é uma tendência que está crescendo e que tem o potencial de revolucionar o setor de vendas.
 
 Os empreendedores que estão desenvolvendo essa ferramenta estão bem posicionados para aproveitar essa tendência e mudar o mundo das vendas.
+
 ![logo Zap Selling](https://github.com/Pablo-Kennediy/Zap-Selling/assets/98966014/8ae3cfe0-acf1-4599-a5fe-777bcfefd9f1)
