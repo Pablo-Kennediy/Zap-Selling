@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -189,7 +188,7 @@
 
     nav {
         color: #fff;
-        max-width: 50px;
+        max-width: 100px;
     }
 
     nav ul {
@@ -249,9 +248,7 @@
     }
 
     #logoZapSelling img {
-        display: block;
         max-width: 120px;
-        float: right;
     }
 
     section#addAPage div {
@@ -305,11 +302,13 @@
         margin: auto;
         border-radius: 10px;
     }
+
     div.tGatilho {
         max-width: 500px;
         margin: auto;
         margin-bottom: 15px;
     }
+
     .tGatilho {
         display: flex;
         margin: auto;
@@ -319,7 +318,6 @@
         padding: 10px;
     }
 </style>
-
 <body>
     <header>
         <picture id="logoZapSelling">
@@ -329,6 +327,25 @@
             <img src="imagens/my job.png" alt="">
         </label>
         <div id="menuTop">
+            <nav>
+                <picture id="setasDuplas">
+                    <img src="imagens/setas-duplas-para-baixo.png" alt="">
+                </picture>
+                <ul>
+                    <li>
+                        <a href="templates.html">Modelos</a>
+                    </li>
+                    <li>
+                        <a href="guia.html">Manual</a>
+                    </li>
+                    <li>
+                        <a href="heatingMat.html">Historico</a>
+                    </li>
+                    <li>
+                        <a href="membros.html">Comunidade</a>
+                    </li>
+                </ul>
+            </nav>
             <a href="navegação.html">
                 <p>
                     HOME
@@ -345,30 +362,11 @@
                     SUPORTE
                 </p>
             </a>
+            <label id="input" for="">
+                <img src="imagens/lupa.png" alt="">
+                <input type="text" name="" id="" placeholder="Pesquisa">
+            </label>
         </div>
-        <label id="input" for="">
-            <img src="imagens/lupa.png" alt="">
-            <input type="text" name="" id="" placeholder="Pesquisa">
-        </label>
-        <label for="">
-            <a href="templates.html">Modelos</a>
-        </label>
-        <label for="">
-            <a href="guia.html">Manual</a>
-        </label>
-        <nav>
-            <picture id="setasDuplas">
-                <img src="imagens/setas-duplas-para-baixo.png" alt="">
-            </picture>
-            <ul>
-                <li>
-                    <a href="heatingMat.html">Historico</a>
-                </li>
-                <li>
-                    <a href="membros.html">Comunidade</a>
-                </li>
-            </ul>
-        </nav>
     </header>
     <!-- Esteira de aquecimento, está area é de extrema importacia para o cliente... atenção dobrada aqui. -->
     <sention id="esteiraDeAquecimento">

@@ -20,7 +20,7 @@
     }
 
     body {
-        background-color:#262223;
+        background-color: #262223;
         color: white;
     }
 
@@ -188,7 +188,7 @@
 
     nav {
         color: #fff;
-        max-width: 50px;
+        max-width: 100px;
     }
 
     nav ul {
@@ -237,8 +237,9 @@
         width: 35px;
     }
 
-    ul#esteiraDeAquecimentoo img {
-        max-width: 55px;
+    #esteira img {
+        display: block;
+        width: 55px;
     }
 
     #first img {
@@ -247,9 +248,7 @@
     }
 
     #logoZapSelling img {
-        display: block;
         max-width: 120px;
-        float: right;
     }
 
     section#addAPage div {
@@ -265,9 +264,9 @@
     }
 
     div#pop li {
-        margin: auto;
+        margin: 15px;
+        padding: 15px;
         text-align: center;
-        margin-top: 5px;
         max-width: 285px;
         border: 2px solid gray;
         border-radius: 15px;
@@ -303,6 +302,21 @@
         margin: auto;
         border-radius: 10px;
     }
+
+    div.tGatilho {
+        max-width: 500px;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    .tGatilho {
+        display: flex;
+        margin: auto;
+        text-align: center;
+        border: solid gray 2px;
+        border-radius: 15px;
+        padding: 10px;
+    }
 </style>
 <body>
     <header>
@@ -313,14 +327,33 @@
             <img src="imagens/my job.png" alt="">
         </label>
         <div id="menuTop">
+            <nav>
+                <picture id="setasDuplas">
+                    <img src="imagens/setas-duplas-para-baixo.png" alt="">
+                </picture>
+                <ul>
+                    <li>
+                        <a href="templates.html">Modelos</a>
+                    </li>
+                    <li>
+                        <a href="guia.html">Manual</a>
+                    </li>
+                    <li>
+                        <a href="heatingMat.html">Historico</a>
+                    </li>
+                    <li>
+                        <a href="membros.html">Comunidade</a>
+                    </li>
+                </ul>
+            </nav>
             <a href="navegação.html">
                 <p>
                     HOME
                 </p>
             </a>
-            <a href="meusScripts.html">
+            <a href="Gerenciador de Leads.html">
                 <p>
-                    MINHAS RESPOSTAS
+                    GERENCIADOR DE LEADS
                 </p>
             </a>
             <a
@@ -329,30 +362,11 @@
                     SUPORTE
                 </p>
             </a>
+            <label id="input" for="">
+                <img src="imagens/lupa.png" alt="">
+                <input type="text" name="" id="" placeholder="Pesquisa">
+            </label>
         </div>
-        <label id="input" for="">
-            <img src="imagens/lupa.png" alt="">
-            <input type="text" name="" id="" placeholder="Pesquisa">
-        </label>
-        <label for="">
-            <a href="templates.html">Modelos</a>
-        </label>
-        <label for="">
-            <a href="guia.html">Manual</a>
-        </label>
-        <nav>
-            <picture id="setasDuplas">
-                <img src="imagens/setas-duplas-para-baixo.png" alt="">
-            </picture>
-            <ul>
-                <li>
-                    <a href="heatingMat.html">Historico</a>
-                </li>
-                <li>
-                    <a href="membros.html">Comunidade</a>
-                </li>
-            </ul>
-        </nav>
     </header>
     <!-- Essa parte é esclusiva para o 'Guia', atenção na alteração de commit -->
     <picture id="setasMultimidia">
