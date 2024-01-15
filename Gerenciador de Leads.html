@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +21,7 @@
     }
 
     body {
-        background-color:#262223;
+        background-color: #262223;
         color: white;
     }
 
@@ -237,8 +238,9 @@
         width: 35px;
     }
 
-    ul#esteiraDeAquecimentoo img {
-        max-width: 55px;
+    #esteira img {
+        display: block;
+        width: 55px;
     }
 
     #first img {
@@ -265,9 +267,9 @@
     }
 
     div#pop li {
-        margin: auto;
+        margin: 15px;
+        padding: 15px;
         text-align: center;
-        margin-top: 5px;
         max-width: 285px;
         border: 2px solid gray;
         border-radius: 15px;
@@ -303,7 +305,21 @@
         margin: auto;
         border-radius: 10px;
     }
+    div {
+        max-width: 500px;
+        margin: auto;
+    }
+    .tGatilho {
+        display: flex;
+        margin: auto;
+        margin-bottom: 15px;
+        text-align: center;
+        border: solid gray 2px;
+        border-radius: 15px;
+        padding: 10px;
+    }
 </style>
+
 <body>
     <header>
         <picture id="logoZapSelling">
@@ -318,9 +334,9 @@
                     HOME
                 </p>
             </a>
-            <a href="meusScripts.html">
+            <a href="Gerenciador de Leads.html">
                 <p>
-                    MINHAS RESPOSTAS
+                    GERENCIADOR DE LEADS
                 </p>
             </a>
             <a
@@ -356,31 +372,57 @@
     </header>
     <!-- Esteira de aquecimento, está area é de extrema importacia para o cliente... atenção dobrada aqui. -->
     <sention id="esteiraDeAquecimento">
-        <ul id="esteiraDeAquecimentoo">
-            <h2 id="topVH">
-                Selecione um arquivo e monte seu script
-            </h2>
-            <li>
-                <img src="imagens/texto.png" alt="">
-                TEXTO
-            </li>
-            <li>
-                <img src="imagens/mensagem-de-audio.png" alt="">
-                AUDIO
-            </li>
-            <li>
-                <img src="imagens/galeria.png" alt="">
-                IMAGENS
-            </li>
-            <li>
-                <img src="imagens/video.png" alt="">
-                VIDEOS
-            </li>
-            <li>
+        <h2 id="topVH">
+            Automação de Mensagens
+        </h2>
+<div class="tGatilho">
+    <picture id="esteira">
+        <img src="imagens/texto.png" alt="">
+    </picture>
+    <p>
+        Mensagem de Texto
+    </p>
+</div>
+  <div class="tGatilho">
+    <picture id="esteira">
+        <img src="imagens/mensagem-de-audio.png" alt="">
+    </picture>
+    <p>
+        Áudios
+    </p>
+  </div>
+    <div class="tGatilho">
+        <picture id="esteira">
+            <img src="imagens/galeria.png" alt="">
+        </picture>
+        <p>
+            Mídias
+        </p>
+    </div>
+      <div class="tGatilho">
+        <picture id="esteira">
+            <img src="imagens/video.png" alt="">
+        </picture>
+        <p>
+            VIDEOS
+        </p>
+      </div>
+        <div class="tGatilho">
+            <picture id="esteira">
                 <img src="imagens/adicionar.png" alt="">
-                OUTROS TIPOS DE AQUIVOS
-            </li>
-        </ul>
+            </picture>
+            <p>
+                Documentos
+            </p>
+        </div>
+       <div class="tGatilho">
+        <picture id="esteira">
+            <img src="imagens/funil.png" alt="">
+        </picture>
+        <p>
+            Funis
+        </p>
+       </div>
     </sention>
     <div id="pop">
         <li>
