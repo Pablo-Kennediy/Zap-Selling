@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -188,10 +189,12 @@
 
     nav {
         color: #fff;
-        max-width: 100px;
-    }
+        max-width: 200px;
+            }
 
     nav ul {
+        padding: 25px;
+        border-right: solid 1px gray;
         display: none;
     }
 
@@ -248,6 +251,8 @@
     }
 
     #logoZapSelling img {
+        display: block;
+        margin: auto;
         max-width: 120px;
     }
 
@@ -318,6 +323,7 @@
         padding: 10px;
     }
 </style>
+
 <body>
     <header>
         <picture id="logoZapSelling">
@@ -333,19 +339,30 @@
                 </picture>
                 <ul>
                     <li>
-                        <a href="templates.html">Modelos</a>
+                        <a href="guia.html">Ajuda</a>
                     </li>
                     <li>
-                        <a href="guia.html">Manual</a>
+                        <a href="membros.html">Comunidade</a>
+                    </li>
+                    <li>
+                        <a href="#">Configuração</a>
                     </li>
                     <li>
                         <a href="heatingMat.html">Historico</a>
                     </li>
                     <li>
-                        <a href="membros.html">Comunidade</a>
+                        <a href="templates.html">Modelos</a>
                     </li>
+                    <li>
+                        <a href="#">Perfil</a>
+                    </li>
+
                 </ul>
             </nav>
+            <label id="input" for="">
+                <img src="imagens/lupa.png" alt="">
+                <input type="text" name="" id="" placeholder="Pesquisa">
+            </label>
             <a href="navegação.html">
                 <p>
                     HOME
@@ -362,24 +379,14 @@
                     SUPORTE
                 </p>
             </a>
-            <label id="input" for="">
-                <img src="imagens/lupa.png" alt="">
-                <input type="text" name="" id="" placeholder="Pesquisa">
-            </label>
         </div>
     </header>
     <!-- Essa parte é esclusiva para o 'Guia', atenção na alteração de commit -->
-    <picture id="setasMultimidia">
-        <a href="guia.html">
-            <img id="setaEsquedaMultimidia" src="imagens/duas-setas-para-a-esquerda (1).png" alt="">
-        </a>
-        <a href="guia3.html">
-            <img id="setaDireitaMultimidia" src="imagens/avanco-rapido.png" alt="">
-        </a>
-    </picture>
-    <section id="addAPage">
-        <h1 style="text-align: justify; background-color: rgb(14, 92, 11);">GUIA DO VENDEDOR</h1>
-        <h2>
+      <section id="addAPage">
+        <h1 style="text-align: justify; background-color: rgb(14, 92, 11);">
+            Guia do usuário (Passo a passo de como utilizar a ferramenta)
+        </h1> 
+               <h2>
             <strong>Desenvolvimento</strong>
         </h2>
         <legend>
@@ -408,6 +415,14 @@
             cliente.
         </p>
     </section>
+    <picture id="setasMultimidia">
+        <a href="guia.html">
+            <img id="setaEsquedaMultimidia" src="imagens/duas-setas-para-a-esquerda (1).png" alt="">
+        </a>
+        <a href="guia3.html">
+            <img id="setaDireitaMultimidia" src="imagens/avanco-rapido.png" alt="">
+        </a>
+    </picture>
     <footer>
         <p for="">
             © 2023 - Todos os direitos reservados by - <a style="margin-left: 5px;"
