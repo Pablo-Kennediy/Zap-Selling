@@ -294,7 +294,7 @@
     picture#feed img {
         display: block;
         margin: auto;
-        max-width: 900px;
+        max-width: 90%;
         border-radius: 15px;
     }
 
@@ -331,23 +331,47 @@
         margin: auto;
     }
 
-    section#configurações p{
+    section#configurações p {
         padding: 15px;
         border-top: 1px solid gray;
         text-align: justify;
     }
-   .flex {
+
+    .flex {
         display: flex;
     }
-    .flex div{
+
+    .flex div {
         margin: 15px;
     }
-    .flex input{
+
+    .flex input {
         margin: 15px;
     }
 </style>
+
 <body>
     <header>
+        <div class="flex-menu-top" style="display: flex; align-items: center;text-align: center;">
+            <a href="navegação.html">
+                <p style="border: 2px solid gray; border-radius: 15px; margin: 5px; max-width: 85px;padding: 5px;">
+                    HOME
+                </p>
+            </a>
+            <a href="Gerenciador de Leads.html">
+                <p
+                    style="border: 2px solid gray; border-radius: 15px; margin: auto; display: flex; max-width: 440px; padding: 5px;">
+                    AUTOMAÇÃO DE MENSAGENS
+                </p>
+            </a>
+            <p
+                style="border: 2px solid gray; border-radius: 15px; margin: 5px; display: block; max-width: 285px; padding: 5px;">
+                <a href="https://api.whatsapp.com/send?phone=5519986030166&text=TESTE%0ASuporte%20!!!%0ABom%20dia,%20%0ATenho%20um%20grave%20problema%20com%20a%20plataforma%20e%20preciso%20apoio%20imediato."
+                    target="_blank">
+                    SUPORTE
+                </a>
+            </p>
+        </div>
         <div id="menuTop">
             <nav>
                 <picture id="setasDuplas">
@@ -355,13 +379,12 @@
                 </picture>
                 <ul>
                     <li>
-                        <a href="guia.html"
-                        >Ajuda
+                        <a href="guia.html">Ajuda
                         </a>
                     </li>
                     <li>
                         <a href="membros.html">
-                            Comunidade                            
+                            Comunidade
                         </a>
                     </li>
                     <li>
@@ -391,22 +414,6 @@
                 <img src="imagens/lupa.png" alt="">
                 <input type="text" name="" id="" placeholder="Pesquisa">
             </label>
-            <a href="navegação.html">
-                <p>
-                    HOME
-                </p>
-            </a>
-            <a href="Gerenciador de Leads.html">
-                <p>
-                    AUTOMAÇÃO DE MENSAGENS
-                </p>
-            </a>
-            <a
-                href="https://api.whatsapp.com/send?phone=5519986030166&text=TESTE%0ASuporte%20!!!%0ABom%20dia,%20%0ATenho%20um%20grave%20problema%20com%20a%20plataforma%20e%20preciso%20apoio%20imediato." target="_blank">
-                <p>
-                    SUPORTE
-                </p>
-            </a>
         </div>
         <picture id="logoZapSelling">
             <img src="imagens/logo Zap Selling.jpeg" alt="">
@@ -416,7 +423,8 @@
         <p>
             © 2023 - Todos os direitos reservados by - <a style="margin-left: 5px;"
                 href="https://www.instagram.com/ryanferreira_019/" target="_blank">RYAN
-                FERREIRA</a> & <a href="https://www.instagram.com/pk_digital_products/" target="_blank">PK DIGITAL PRODUCTS</a>
+                FERREIRA</a> & <a href="https://www.instagram.com/pk_digital_products/" target="_blank">PK DIGITAL
+                PRODUCTS</a>
         </p>
     </footer>
 </body>
