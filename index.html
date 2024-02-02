@@ -22,7 +22,7 @@
     }
 
     body {
-        background-color:#1b1717;
+        background-color: #1b1717;
         color: white;
     }
 
@@ -118,7 +118,7 @@
         border-bottom: solid white 2px;
         height: 0vh;
     }
-    
+
     button#deVoltaAoTopo {
         position: fixed;
         bottom: 0;
@@ -208,6 +208,7 @@
         border-radius: 25px;
     }
 </style>
+
 <body>
     <header>
         <picture id="logoZapSelling">
@@ -225,16 +226,13 @@
                 target="_blank"><strong style="color: green;">whatsapp</strong></a>.
         </h2>
         <div class="login">
-            <form action="action.php" method="post">
-                <h1>
-                    Faça login
-                </h1>
-                <p>
-                    Ou faça seu cadastro usando o Google
-                </p>
-                <input type="email" name="email" placeholder="E-mail"> <br>
-                <input type="password" name="password" placeholder="Senha"> <br>
-                <input type="submit" value="Entrar">
+            <form action="navegação.html" method="post">
+                <h1>Login</h1>
+                <label for="usuario">Usuário:</label>
+                <input type="text" id="usuario" placeholder="Digite seu nome de usuário">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" placeholder="Digite sua senha">
+                <button id="entrar">Entrar</button>
             </form>
         </div>
     </div>
@@ -243,11 +241,7 @@
             lead
         </button>
     </a>
-    <a href="navegação.html">
-        <button>
-            Painel de controle
-        </button>
-    </a>
+    <script src="script.js"></script>
     <footer>
         <p for="">
             © 2023 - Todos os direitos reservados by - <a style="margin-left: 5px;"
@@ -256,4 +250,5 @@
         </p>
     </footer>
 </body>
+
 </html>
