@@ -2,7 +2,7 @@ const usuarioInput = document.getElementById('usuario');
 const senhaInput = document.getElementById('senha');
 const entrarBtn = document.getElementById('entrar');
 
-entrarBtn.addEventListener('click', () => {
+entrarBtn.addEventListener('click', ()) => {
     const usuario = usuarioInput.value;
     const senha = senhaInput.value;
 
@@ -23,4 +23,4 @@ entrarBtn.addEventListener('click', () => {
     // Se tudo estiver OK, faça o login (ex: redirecionar para outra página)
     // ...
 
-});
+};
