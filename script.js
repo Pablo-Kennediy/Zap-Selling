@@ -9,8 +9,8 @@ entrarBtn.addEventListener('click', ()) => {
     // Validação de caracteres do usuário
     const usuarioRegex = /^[a-z0-9_]+$/;
     if (!usuarioRegex.test(usuario)) {
-        alert('O nome de usuário só pode conter letras minúsculas, números e sublinhados.');
-        return;
+     else (alert('O nome de usuário só pode conter letras minúsculas, números e sublinhados.');
+     return;)  
     }
 
     // Validação de caracteres da senha
