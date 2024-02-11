@@ -348,71 +348,70 @@
 </style>
 <body>
     <header>
-        <div id="menuTop">
-            <nav>
-                <picture id="setasDuplas">
-                    <img src="imagens/setas-duplas-para-baixo.png" alt="">
-                </picture>
-                <ul>
-                    <li>
-                        <a href="guia.html"
-                        >Ajuda
-                        </a>
-                    </li>
-                    <li>
-                        <a href="membros.html">
-                            Comunidade                            
-                        </a>
-                    </li>
-                    <li>
-                        <a href="configurações.html">
-                            Configuração
-                        </a>
-                    </li>
-                    <li>
-                        <a href="heatingMat.html">
-                            Historico
-                        </a>
-                    </li>
-                    <li>
-                        <a href="templates.html">
-                            Modelos
-                        </a>
-                    </li>
-                    <li>
-                        <a href="perfil.html">
-                            Minha Conta
-                        </a>
-                    </li>
-                    <li>
-                        <a href="logout">
-                            Sair
-                        </a>
-                    </li>
-
-                </ul>
-            </nav>
-            <label id="input" for="">
-                <img src="imagens/lupa.png" alt="">
-                <input type="text" name="" id="" placeholder="Pesquisa">
-            </label>
+        <div class="flex-menu-top" style="display: flex; align-items: center;text-align: center;">
             <a href="navegação.html">
-                <p>
+                <p style="border: 2px solid gray; border-radius: 15px; margin: 5px; max-width: 85px;padding: 5px;">
                     HOME
                 </p>
             </a>
             <a href="Gerenciador de Leads.html">
-                <p>
+                <p
+                    style="border: 2px solid gray; border-radius: 15px; margin: auto; display: flex; max-width: 440px; padding: 5px;">
                     AUTOMAÇÃO DE MENSAGENS
                 </p>
             </a>
-            <a
-                href="https://api.whatsapp.com/send?phone=5519986030166&text=TESTE%0ASuporte%20!!!%0ABom%20dia,%20%0ATenho%20um%20grave%20problema%20com%20a%20plataforma%20e%20preciso%20apoio%20imediato." target="_blank">
-                <p>
+            <p
+                style="border: 2px solid gray; border-radius: 15px; margin: 5px; display: block; max-width: 285px; padding: 5px;">
+                <a href="https://api.whatsapp.com/send?phone=5519986030166&text=TESTE%0ASuporte%20!!!%0ABom%20dia,%20%0ATenho%20um%20grave%20problema%20com%20a%20plataforma%20e%20preciso%20apoio%20imediato."
+                    target="_blank">
                     SUPORTE
-                </p>
-            </a>
+                </a>
+            </p>
         </div>
+        <div id="menuTop" style="float:left; position: fixed;">
+            <div class="flex">
+                <nav>
+                    <picture id="setasDuplas">
+                        <img src="imagens/setas-duplas-para-baixo.png" alt="">
+                    </picture>
+                    <ul style="background-color: rgba(59, 54, 54, 0.89);border-radius: 15px;">
+                        <li>
+                            <a href="guia.html">Ajuda
+                            </a>
+                        </li>
+                        <li>
+                            <a href="membros.html">
+                                Comunidade
+                            </a>
+                        </li>
+                        <li>
+                            <a href="configurações.html">
+                                Configuração
+                            </a>
+                        </li>
+                        <li>
+                            <a href="heatingMat.html">
+                                Historico
+                            </a>
+                        </li>
+                        <li>
+                            <a href="templates.html">
+                                Modelos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="perfil.html">
+                                Minha Conta
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                        </div>
+        </div>
+        <label id="input" for="" style="float: right;">
+            <img src="imagens/lupa.png" alt="">
+            <input type="text" name="" id="" placeholder="Pesquisa">
+        </label>
         <picture id="logoZapSelling">
             <img src="imagens/logo Zap Selling.jpeg" alt="">
         </picture>
