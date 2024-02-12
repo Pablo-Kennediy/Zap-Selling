@@ -12,6 +12,8 @@
 <style>
     * {
         font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
     }
 
     a {
@@ -459,32 +461,32 @@
         <form method="POST" action="{{ url_for('auth.login') }}">
             <label for="email">Email:</label>
             <input type="text" id="email" name="email" required>
-        
+
             <label for="senha1">Password:</label>
             <input type="password" id="senha1" name="senha1" required>
-        
+
             <button type="submit">Login</button>
         </form>
 
-            </div>
+    </div>
 
-        </form>
-        {% with messages = get_flashed_messages(with_categories=True) %}
-        {% if messages %}
-            {% for category, message in messages %}
-            {% if category == 'error' %}
-            <div class="alert alert danger alert-dismissible fade show" role="alert">    
-                {{ message }}
-                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-            </div>
-            {% else %}
-            <div class="alert alert danger alert-dismissible fade show" role="alert">    
-                {{ message }}
-                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-            </div>
-            {% endif %}   
-            {% endfor %}
-        {% endif %}
+    </form>
+    {% with messages = get_flashed_messages(with_categories=True) %}
+    {% if messages %}
+    {% for category, message in messages %}
+    {% if category == 'error' %}
+    <div class="alert alert danger alert-dismissible fade show" role="alert">
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+    {% else %}
+    <div class="alert alert danger alert-dismissible fade show" role="alert">
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
     {% endwith %}
     </div>
     <a href='signup'>
@@ -505,5 +507,5 @@
         </p>
     </footer>
 </body>
-</html>
 
+</html>
