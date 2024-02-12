@@ -193,10 +193,16 @@
     }
 
     nav ul {
+        display: none;
         padding: 25px;
         border-right: solid 1px gray;
-        display: none;
     }
+
+    nav:hover ul {
+        display: block;
+        height: 100vh;
+    }
+
 
     nav ul li {
         list-style: none;
@@ -207,13 +213,8 @@
         color: #fff;
     }
 
-    nav:hover ul {
-        display: block;
-
-    }
-
     div#menuTop {
-        display: flex;
+        display: flexbox;
     }
 
     div#menuTop p {
@@ -348,78 +349,106 @@
     .flex input {
         margin: 15px;
     }
+
+    .menu {
+        position: fixed;
+        background-color: black;
+        width: 100%;
+        transition: top 0.3s ease-in-out;
+    }
+
+    header {
+        height: 50px;
+        /* Altere para a altura do seu menu */
+    }
+
+    .menu.scrolled {
+        top: -50px;
+        /* Altere para a altura do seu menu */
+    }
 </style>
 
 <body>
     <header>
-        <div class="flex-menu-top" style="display: flex; align-items: center;text-align: center;">
-            <a href="navegação.html">
-                <p style="border: 2px solid gray; border-radius: 15px; margin: 5px; max-width: 85px;padding: 5px;">
-                    HOME
-                </p>
-            </a>
-            <a href="Gerenciador de Leads.html">
-                <p
-                    style="border: 2px solid gray; border-radius: 15px; margin: auto; display: flex; max-width: 440px; padding: 5px;">
-                    AUTOMAÇÃO DE MENSAGENS
-                </p>
-            </a>
-            <p
-                style="border: 2px solid gray; border-radius: 15px; margin: 5px; display: block; max-width: 285px; padding: 5px;">
-                <a href="https://api.whatsapp.com/send?phone=5519986030166&text=TESTE%0ASuporte%20!!!%0ABom%20dia,%20%0ATenho%20um%20grave%20problema%20com%20a%20plataforma%20e%20preciso%20apoio%20imediato."
-                    target="_blank">
-                    SUPORTE
-                </a>
-            </p>
+        <div class="menu">
+            <div class="scrolled" style=" display: flex; width: 100%;">
+                <div class="flex-menu-top"
+                    style="display: flex; align-items: center;text-align: center; margin-left: 35px;">
+
+                    <a href="navegação.html">
+                        <p
+                            style="border: 2px solid gray; border-radius: 15px; margin: 5px; max-width: 85px;padding: 5px;">
+                            HOME
+                        </p>
+                    </a>
+                    <a href="Gerenciador de Leads.html">
+                        <p
+                            style="border: 2px solid gray; border-radius: 15px; margin: auto; display: flex; max-width: 440px; padding: 5px;">
+                            AUTOMAÇÃO DE MENSAGENS
+                        </p>
+                    </a>
+                    <p
+                        style="border: 2px solid gray; border-radius: 15px; margin: 5px; display: block; max-width: 285px; padding: 5px;">
+                        <a href="https://api.whatsapp.com/send?phone=5519986030166&text=TESTE%0ASuporte%20!!!%0ABom%20dia,%20%0ATenho%20um%20grave%20problema%20com%20a%20plataforma%20e%20preciso%20apoio%20imediato."
+                            target="_blank">
+                            SUPORTE
+                        </a>
+                    </p>
+                </div>
+                <label id="input" for="" style="float: right;">
+                    <img src="imagens/lupa.png" alt="">
+                    <input type="text" name="" id="" placeholder="Pesquisa">
+                </label>
+                <div id="menuTop"
+                    style="float:left; position: fixed; background-color: #91A663; padding-left: 3px; padding-right: 3px; border-radius: 15px; ">
+                    <div class="flex">
+                        <nav>
+                            <picture id="setasDuplas">
+                                <img src="imagens/menu.png" alt="">
+                            </picture>
+                            <ul style="background-color: #91A663;border-radius: 15px;">
+                                <p style="background-color: #262223; border-radius: 15px; padding: 15px;">
+                                    Painel de controle
+                                </p>
+                                <li>
+                                    <a href="guia.html">Ajuda
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="membros.html">
+                                        Comunidade
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="configurações.html">
+                                        Configuração
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="heatingMat.html">
+                                        Historico
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="templates.html">
+                                        Modelos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="perfil.html">
+                                        Minha Conta
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="menuTop" style="float:left; position: fixed;">
-            <div class="flex">
-                <nav>
-                    <picture id="setasDuplas">
-                        <img src="imagens/setas-duplas-para-baixo.png" alt="">
-                    </picture>
-                    <ul style="background-color: rgba(59, 54, 54, 0.89);border-radius: 15px;">
-                        <li>
-                            <a href="guia.html">Ajuda
-                            </a>
-                        </li>
-                        <li>
-                            <a href="membros.html">
-                                Comunidade
-                            </a>
-                        </li>
-                        <li>
-                            <a href="configurações.html">
-                                Configuração
-                            </a>
-                        </li>
-                        <li>
-                            <a href="heatingMat.html">
-                                Historico
-                            </a>
-                        </li>
-                        <li>
-                            <a href="templates.html">
-                                Modelos
-                            </a>
-                        </li>
-                        <li>
-                            <a href="perfil.html">
-                                Minha Conta
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                        </div>
-        </div>
-        <label id="input" for="" style="float: right;">
-            <img src="imagens/lupa.png" alt="">
-            <input type="text" name="" id="" placeholder="Pesquisa">
-        </label>
-        <picture id="logoZapSelling">
-            <img src="imagens/logo Zap Selling.jpeg" alt="">
-        </picture>
     </header>
+    <picture id="logoZapSelling">
+        <img src="imagens/logo Zap Selling.jpeg" alt="">
+    </picture>
     <!-- Essa parte é esclusiva para o 'Guia', atenção na alteração de commit -->
     <h1 style="text-align: justify; background-color: rgb(14, 92, 11);">
         Guia do usuário (Passo a passo de como utilizar a ferramenta)

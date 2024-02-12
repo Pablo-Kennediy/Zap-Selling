@@ -5,32 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <a  href="https://icons8.com/icon/GtCWRmkr5I2V/robo">Robo</a> icon by <a href="https://icons8.com">Icons8</a> -->
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/icone logo Zap Selling.png" type="image/x-icon">
     <title>ZAP SELLING</title>
 </head>
+<!-- Nota, qualquer atualização em css front resulta Control C + V cascata para todos HTML, para de esquecer por favor.  -->
 <style>
     * {
-        text-align: center;
         font-family: Arial, Helvetica, sans-serif;
     }
 
     a {
         position: relative;
         text-decoration: none;
-        color: white;
+        color: #91A663;
     }
 
     body {
-        background-color:#1b1717;
+        background-color: #262223;
         color: white;
-    }
-
-    #logoZapSelling img {
-        display: block;
-        max-width: 200px;
-        margin: auto;
-        border-radius: 360px;
     }
 
     .container {
@@ -50,24 +42,8 @@
         padding: 15px;
     }
 
-    input {
-        max-width: 400px;
-        height: 40px;
-        padding: 10px;
-        margin: 10px;
-        font-size: 16px;
-        border-radius: 25px;
-    }
-
-    input[type="submit"] {
-        background-color: #0c111a;
-        color: #ffffff;
-        font-size: 18px;
-        cursor: pointer;
-    }
-
     header {
-        position: static;
+        margin-bottom: 25px;
     }
 
     header picture {
@@ -75,36 +51,30 @@
     }
 
     footer {
+        margin-top: 20vh;
+        text-align: center;
         padding: 15px;
     }
 
     article {
-        display: block;
-        float: left;
+        display: inline-block;
         max-width: 300px;
     }
 
     section {
         display: block;
         position: relative;
-        padding-bottom: 400px;
-    }
-
-    section#comunidade {
-        margin-top: 100vh;
-    }
-
-    section#comunidade img {
-        max-width: 285px;
+        text-align: center;
     }
 
     section#updates {
-        min-width: 300px;
+        margin: auto;
+        max-width: 400px;
     }
 
     section#updates img {
         display: block;
-        max-width: 185px;
+        max-width: 85px;
         margin: auto;
     }
 
@@ -114,11 +84,18 @@
         padding: 5px;
     }
 
+    section#comunidade img {
+        max-width: 285px;
+    }
+
     section#config {
         border-bottom: solid white 2px;
-        height: 0vh;
     }
-    
+
+    label {
+        padding: 10px;
+    }
+
     button#deVoltaAoTopo {
         position: fixed;
         bottom: 0;
@@ -131,10 +108,6 @@
 
     button#deVoltaAoTopo a {
         position: absolute;
-    }
-
-    #first img {
-        max-width: 185px;
     }
 
     #newpage img {
@@ -169,11 +142,11 @@
     }
 
     #addAPage img {
-        max-width: 280px;
+        max-width: 85px;
     }
 
     #teamSpace img {
-        max-width: 285px;
+        max-width: 185px;
     }
 
     #templates img {
@@ -182,10 +155,6 @@
 
     #import img {
         max-width: 285px;
-    }
-
-    #trash {
-        margin-top: 400px;
     }
 
     #trash img {
@@ -201,83 +170,285 @@
 
     img:hover {
         transform: translate(-10px, 0);
+        transition-duration: 3s;
     }
 
     button {
         margin: 15px;
         border-radius: 25px;
     }
+
+    ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 15px;
+        padding: 10px;
+        border-radius: 15px;
+        border: 1px solid gray;
+    }
+
+    nav {
+        color: #fff;
+        max-width: 200px;
+    }
+
+    nav ul {
+        display: none;
+        padding: 25px;
+        border-right: solid 1px gray;
+    }
+
+    nav:hover ul {
+        display: block;
+        height: 100vh;
+    }
+
+
+    nav ul li {
+        list-style: none;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    div#menuTop {
+        display: flexbox;
+    }
+
+    div#menuTop p {
+        border: solid gray 1px;
+        border-radius: 15px;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    input {
+        max-width: 400px;
+        font-size: 16px;
+        border-radius: 25px;
+        padding: 5px;
+    }
+
+    #input img {
+        max-width: 35px;
+    }
+
+    picture#setasDuplas img {
+        display: block;
+        margin-top: 15px;
+        width: 35px;
+    }
+
+    #esteira img {
+        display: block;
+        width: 55px;
+    }
+
+    #first img {
+        float: right;
+        max-width: 150px;
+    }
+
+    #logoZapSelling img {
+        display: block;
+        margin: auto;
+        max-width: 120px;
+        border-radius: 360px;
+    }
+
+    section#addAPage div {
+        margin: 25px;
+        margin-top: 15px;
+        border: solid gray 2px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    div#pop li {
+        margin: 15px;
+        padding: 15px;
+        text-align: center;
+        max-width: 285px;
+        border: 2px solid gray;
+        border-radius: 15px;
+    }
+
+    div#comunidade2 {
+        display: flex;
+        margin: 15px;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        padding: 15px;
+    }
+
+    div#comunidade2 img {
+        display: block;
+        max-width: 85px;
+    }
+
+    picture#feed img {
+        display: block;
+        margin: auto;
+        max-width: 90%;
+        border-radius: 15px;
+    }
+
+    picture img#setaDireitaMultimidia {
+        float: right;
+    }
+
+    picture#desenhoDeUmBancoDeBadosRoxo img {
+        display: block;
+        max-width: 155px;
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    div.tGatilho {
+        max-width: 500px;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    .tGatilho {
+        display: flex;
+        margin: auto;
+        text-align: center;
+        border: solid gray 2px;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    section#configurações {
+        border: solid 2px gray;
+        border-radius: 15px;
+        max-width: 500px;
+        margin: auto;
+    }
+
+    section#configurações p {
+        padding: 15px;
+        border-top: 1px solid gray;
+        text-align: justify;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .flex div {
+        margin: 15px;
+    }
+
+    .flex input {
+        margin: 15px;
+    }
+
+    .menu {
+        position: fixed;
+        background-color: black;
+        width: 100%;
+        transition: top 0.3s ease-in-out;
+    }
+
+    header {
+        height: 50px;
+        /* Altere para a altura do seu menu */
+    }
+
+    .menu.scrolled {
+        top: -50px;
+        /* Altere para a altura do seu menu */
+    }
 </style>
+
 <body>
     <header>
-        <div class="flex-menu-top" style="display: flex; align-items: center;text-align: center;">
-            <a href="navegação.html">
-                <p style="border: 2px solid gray; border-radius: 15px; margin: 5px; max-width: 85px;padding: 5px;">
-                    HOME
-                </p>
-            </a>
-            <a href="Gerenciador de Leads.html">
-                <p
-                    style="border: 2px solid gray; border-radius: 15px; margin: auto; display: flex; max-width: 440px; padding: 5px;">
-                    AUTOMAÇÃO DE MENSAGENS
-                </p>
-            </a>
-            <p
-                style="border: 2px solid gray; border-radius: 15px; margin: 5px; display: block; max-width: 285px; padding: 5px;">
-                <a href="https://api.whatsapp.com/send?phone=5519986030166&text=TESTE%0ASuporte%20!!!%0ABom%20dia,%20%0ATenho%20um%20grave%20problema%20com%20a%20plataforma%20e%20preciso%20apoio%20imediato."
-                    target="_blank">
-                    SUPORTE
-                </a>
-            </p>
+        <div class="menu">
+            <div class="scrolled" style=" display: flex; width: 100%;">
+                <div class="flex-menu-top"
+                    style="display: flex; align-items: center;text-align: center; margin-left: 35px;">
+
+                    <a href="navegação.html">
+                        <p
+                            style="border: 2px solid gray; border-radius: 15px; margin: 5px; max-width: 85px;padding: 5px;">
+                            HOME
+                        </p>
+                    </a>
+                    <a href="Gerenciador de Leads.html">
+                        <p
+                            style="border: 2px solid gray; border-radius: 15px; margin: auto; display: flex; max-width: 440px; padding: 5px;">
+                            AUTOMAÇÃO DE MENSAGENS
+                        </p>
+                    </a>
+                    <p
+                        style="border: 2px solid gray; border-radius: 15px; margin: 5px; display: block; max-width: 285px; padding: 5px;">
+                        <a href="https://api.whatsapp.com/send?phone=5519986030166&text=TESTE%0ASuporte%20!!!%0ABom%20dia,%20%0ATenho%20um%20grave%20problema%20com%20a%20plataforma%20e%20preciso%20apoio%20imediato."
+                            target="_blank">
+                            SUPORTE
+                        </a>
+                    </p>
+                </div>
+                <label id="input" for="" style="float: right;">
+                    <img src="imagens/lupa.png" alt="">
+                    <input type="text" name="" id="" placeholder="Pesquisa">
+                </label>
+                <div id="menuTop"
+                    style="float:left; position: fixed; background-color: #91A663; padding-left: 3px; padding-right: 3px; border-radius: 15px; ">
+                    <div class="flex">
+                        <nav>
+                            <picture id="setasDuplas">
+                                <img src="imagens/menu.png" alt="">
+                            </picture>
+                            <ul style="background-color: #91A663;border-radius: 15px;">
+                                <p style="background-color: #262223; border-radius: 15px; padding: 15px;">
+                                    Painel de controle
+                                </p>
+                                <li>
+                                    <a href="guia.html">Ajuda
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="membros.html">
+                                        Comunidade
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="configurações.html">
+                                        Configuração
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="heatingMat.html">
+                                        Historico
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="templates.html">
+                                        Modelos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="perfil.html">
+                                        Minha Conta
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="menuTop" style="float:left; position: fixed;">
-            <div class="flex">
-                <nav>
-                    <picture id="setasDuplas">
-                        <img src="imagens/setas-duplas-para-baixo.png" alt="">
-                    </picture>
-                    <ul style="background-color: rgba(59, 54, 54, 0.89);border-radius: 15px;">
-                        <li>
-                            <a href="guia.html">Ajuda
-                            </a>
-                        </li>
-                        <li>
-                            <a href="membros.html">
-                                Comunidade
-                            </a>
-                        </li>
-                        <li>
-                            <a href="configurações.html">
-                                Configuração
-                            </a>
-                        </li>
-                        <li>
-                            <a href="heatingMat.html">
-                                Historico
-                            </a>
-                        </li>
-                        <li>
-                            <a href="templates.html">
-                                Modelos
-                            </a>
-                        </li>
-                        <li>
-                            <a href="perfil.html">
-                                Minha Conta
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                        </div>
-        </div>
-        <label id="input" for="" style="float: right;">
-            <img src="imagens/lupa.png" alt="">
-            <input type="text" name="" id="" placeholder="Pesquisa">
-        </label>
-        <picture id="logoZapSelling">
-            <img src="imagens/logo Zap Selling.jpeg" alt="">
-        </picture>
     </header>
+    <picture id="logoZapSelling">
+        <img src="imagens/logo Zap Selling.jpeg" alt="">
+    </picture>
     <div class="container">
         <h2>
             Script <img
