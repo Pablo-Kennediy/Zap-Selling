@@ -372,7 +372,7 @@
 </style>
 
 <body>
-    <header>
+    <header style="position: fixed;">
         <div class="menu">
             <div class="scrolled" style=" display: flex; width: 100%;">
                 <div class="flex-menu-top"
@@ -401,8 +401,7 @@
                     <img src="imagens/lupa.png" alt="">
                     <input type="text" name="" id="" placeholder="Pesquisa">
                 </label>
-                <div id="menuTop"
-                    style="position: fixed; background-color: #91A663; padding: 10px; border-radius: 15px;">
+                <div id="menuTop" style="position: fixed; background-color: #91A663; padding: 10px; border-radius: 15px;">
                     <div class="flex">
                         <nav>
                             <picture id="setasDuplas" style="display: block; margin: auto;">
@@ -446,33 +445,35 @@
             </div>
         </div>
     </header>
+    <div style="max-width: 1200px; margin: auto;">
     <picture id="logoZapSelling">
         <img src="imagens/logo Zap Selling.jpeg" alt="">
     </picture>
-    <!-- Essa parte é esclusiva para o 'Guia', atenção na alteração de commit -->
-    <h1 style="text-align: justify; background-color: rgb(14, 92, 11);">
-        Guia do usuário (Passo a passo de como utilizar a ferramenta)
-    </h1>
-    <section id="addAPage" style="max-width: 900px; margin: auto;">
-        <h2>
-            <strong>Desenvolvimento</strong>
-        </h2>
-        <legend>
-            Dica : Aqui o cliente deve ter no minimo '3' tipos de objeções possiveis, ou ele quer COMPRAR, ou ele
-            tem um PROBLEMA e precisa de suporte ou ele quer cancelar
-        </legend>
-        <picture id="faq">
-            <img src="imagens/perguntas-frequentes.png" alt="">
+        <!-- Essa parte é esclusiva para o 'Guia', atenção na alteração de commit -->
+        <h1 style="text-align: justify; background-color: rgb(14, 92, 11);">
+            Guia do usuário (Passo a passo de como utilizar a ferramenta)
+        </h1>
+        <section id="addAPage" style="max-width: 900px; margin: auto;">
+            <h2>
+                <strong>Desenvolvimento</strong>
+            </h2>
+            <legend>
+                Dica : Aqui o cliente deve ter no minimo '3' tipos de objeções possiveis, ou ele quer COMPRAR, ou ele
+                tem um PROBLEMA e precisa de suporte ou ele quer cancelar
+            </legend>
+            <picture id="faq">
+                <img src="imagens/perguntas-frequentes.png" alt="">
+            </picture>
+        </section>
+        <picture id="setasMultimidia">
+            <a href="guia1.html">
+                <img id="setaEsquedaMultimidia" src="imagens/duas-setas-para-a-esquerda (1).png" alt="">
+            </a>
+            <a href="guia3.html">
+                <img id="setaDireitaMultimidia" src="imagens/avanco-rapido.png" alt="">
+            </a>
         </picture>
-    </section>
-    <picture id="setasMultimidia">
-        <a href="guia1.html">
-            <img id="setaEsquedaMultimidia" src="imagens/duas-setas-para-a-esquerda (1).png" alt="">
-        </a>
-        <a href="guia3.html">
-            <img id="setaDireitaMultimidia" src="imagens/avanco-rapido.png" alt="">
-        </a>
-    </picture>
+    </div>
     <footer>
         <p>
             © 2023 - Todos os direitos reservados by - <a style="margin-left: 5px;"

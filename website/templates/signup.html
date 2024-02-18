@@ -372,7 +372,7 @@
 </style>
 
 <body>
-    <header>
+    <header style="position: fixed;">
         <div class="menu">
             <div class="scrolled" style=" display: flex; width: 100%;">
                 <div class="flex-menu-top"
@@ -401,8 +401,7 @@
                     <img src="imagens/lupa.png" alt="">
                     <input type="text" name="" id="" placeholder="Pesquisa">
                 </label>
-                <div id="menuTop"
-                    style="position: fixed; background-color: #91A663; padding: 10px; border-radius: 15px;">
+                <div id="menuTop" style="position: fixed; background-color: #91A663; padding: 10px; border-radius: 15px;">
                     <div class="flex">
                         <nav>
                             <picture id="setasDuplas" style="display: block; margin: auto;">
@@ -446,72 +445,50 @@
             </div>
         </div>
     </header>
+    <div style="max-width: 1200px; margin: auto;">
     <picture id="logoZapSelling">
         <img src="imagens/logo Zap Selling.jpeg" alt="">
     </picture>
-    <div class="container">
-        <h2>
-            Script <img
-                src="data:logo.png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEN0lEQVR4nO2az08TQRTHN1H04n/gf9Brw3stkpTSxG4NigchUdALyEENCagHFVQwKCb+OPgDUIOACvEHeOCXV+MvwMSqR44YTTBejBwNY966U5btbru73eks1UleQpbJzPvMvPm+2bdVFMktFAptQcTLiPgNEZkIA4CvANBLc8nmVcgRUaCYDd4bBOCv5Ix65wKrmR0QYsmB7sxOy+ZV+OqLgq3Rjc8jm/c/cI2+Izv27WaVdXtKb4cB4FVlfe2ac1N9rKq9OeNg/GQLq5nuX7cQVoJkXBzep9LwLDDA1Iw7ET9+OAsmfqIl83+CsAQ2LBrvU2l4FljgaHVMc2znjU6W7O9iFckES3QcK52QtgW+ebY0VTorpNvWzi/BV7U1aec63xnOd64xKMAA8GadGpNotTWxaKJq7Qy3N+c9w/nONQYFONfFg8Ka73TJhDSagKtPHdGEigSLhEsDTlQFBzj0923nOiL+0O1aOBwu8wpMKcgcmpSX3eRhocAAcNXireSKV2C6ZBihKS8bLx5O8rBo4O80UN/dEXb7zjAHXvYMzMHqa4N5tQSAZRqIYG8NDPGBvxUK7Lehj8BZL/AAcKlkgcPhcJkJ+mIsFtvstgBAL+miYJP9Xf4XALyuoFWEmM+uJmKRiKtyjpWBi8gTBkxpjaD5TptDPNFzPFhFPERMAcCsYfCZSCSiFjBeBlirRVVEueMtiuyGiOcRcdViVVcB4JyXMQHgN42h3uth0XjMdV4v+GIPAK/sdpbAotEKdqazmz2emNGM/o5GtV1ZLS8vT3oY971p8abq6uo2KcVomONc8jA+3dnFJl+8XGenOjKqOONh3BAiLiDiCiKOxmKxbcpG/xKAIsRkI3wJwCB8EQA9PYw/n2bpz4tC7enElP8XArcN9VUXDcvNtyuf38AjD5+wZFLNOKiqKfZw9JktiNP+gQVW1VTW2UuldtkCO+1fdOCQjSrbOZaaWNQsX+g77V901QYbVZYBXBTVBl2VqWJBlwZZIU1zGyom4lQbDRPmAibBMUKQ84/G7EXLaX+7+aUDpwWnpf/Asnd4xJRX3Vq+PFy0HQZdtEgw3IqWW8snWrzqKVS0wGNaMqYa4zO75y7Tkn+1J6c1JRnAUl4XUVJIFw3Q3JzmYS+wufKwIquhpDwsDRj0s0wv56Jhn4xPilflgJZ4xKmyV9Uu2SKek8YdNpdnzSb9fPrVShZYVdWtiNgKAHN6YbzQMF6hsQDgWODCOBKJbEfEjwLPcJrmUAK0sx/5hWFw6BF7t/C54DREY9wfHmO1tXu5aH0IxE4jYiuHff0u7Xv+fTOX1sbWoY/K5lUAYJ6coZ21cnj/gUbHodvQcNByjHuDD3ift0EA/kXO2IUxQTgFbmw8ZB3e8594n5+yeRXubMnfo/9l4C+ir5UGW5LNq+g/ZygG9FIhP4Dx0v4AJBC8DKZ/IiYAAAAASUVORK5CYII=">
-            de automação para quem vende muito usando a ferramenta <a href="https://web.whatsapp.com/"
-                target="_blank"><strong style="color: green;">whatsapp</strong></a>.
-        </h2>
-        <form method="POST">
-            <h1 class="center">Cadastro de Usuário</h1>
-            <div class="form-group">
-                <div>
-                    <label for="email">Email</label>
-                    <input 
-                    type="text"
-                    id="email"
-                    name="email"
-                    class="form-control"
-                    placeholder="Email"
-                    />
+        <div class="container">
+            <h2>
+                Script <img
+                    src="data:logo.png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEN0lEQVR4nO2az08TQRTHN1H04n/gf9Brw3stkpTSxG4NigchUdALyEENCagHFVQwKCb+OPgDUIOACvEHeOCXV+MvwMSqR44YTTBejBwNY966U5btbru73eks1UleQpbJzPvMvPm+2bdVFMktFAptQcTLiPgNEZkIA4CvANBLc8nmVcgRUaCYDd4bBOCv5Ix65wKrmR0QYsmB7sxOy+ZV+OqLgq3Rjc8jm/c/cI2+Izv27WaVdXtKb4cB4FVlfe2ac1N9rKq9OeNg/GQLq5nuX7cQVoJkXBzep9LwLDDA1Iw7ET9+OAsmfqIl83+CsAQ2LBrvU2l4FljgaHVMc2znjU6W7O9iFckES3QcK52QtgW+ebY0VTorpNvWzi/BV7U1aec63xnOd64xKMAA8GadGpNotTWxaKJq7Qy3N+c9w/nONQYFONfFg8Ka73TJhDSagKtPHdGEigSLhEsDTlQFBzj0923nOiL+0O1aOBwu8wpMKcgcmpSX3eRhocAAcNXireSKV2C6ZBihKS8bLx5O8rBo4O80UN/dEXb7zjAHXvYMzMHqa4N5tQSAZRqIYG8NDPGBvxUK7Lehj8BZL/AAcKlkgcPhcJkJ+mIsFtvstgBAL+miYJP9Xf4XALyuoFWEmM+uJmKRiKtyjpWBi8gTBkxpjaD5TptDPNFzPFhFPERMAcCsYfCZSCSiFjBeBlirRVVEueMtiuyGiOcRcdViVVcB4JyXMQHgN42h3uth0XjMdV4v+GIPAK/sdpbAotEKdqazmz2emNGM/o5GtV1ZLS8vT3oY971p8abq6uo2KcVomONc8jA+3dnFJl+8XGenOjKqOONh3BAiLiDiCiKOxmKxbcpG/xKAIsRkI3wJwCB8EQA9PYw/n2bpz4tC7enElP8XArcN9VUXDcvNtyuf38AjD5+wZFLNOKiqKfZw9JktiNP+gQVW1VTW2UuldtkCO+1fdOCQjSrbOZaaWNQsX+g77V901QYbVZYBXBTVBl2VqWJBlwZZIU1zGyom4lQbDRPmAibBMUKQ84/G7EXLaX+7+aUDpwWnpf/Asnd4xJRX3Vq+PFy0HQZdtEgw3IqWW8snWrzqKVS0wGNaMqYa4zO75y7Tkn+1J6c1JRnAUl4XUVJIFw3Q3JzmYS+wufKwIquhpDwsDRj0s0wv56Jhn4xPilflgJZ4xKmyV9Uu2SKek8YdNpdnzSb9fPrVShZYVdWtiNgKAHN6YbzQMF6hsQDgWODCOBKJbEfEjwLPcJrmUAK0sx/5hWFw6BF7t/C54DREY9wfHmO1tXu5aH0IxE4jYiuHff0u7Xv+fTOX1sbWoY/K5lUAYJ6coZ21cnj/gUbHodvQcNByjHuDD3ift0EA/kXO2IUxQTgFbmw8ZB3e8594n5+yeRXubMnfo/9l4C+ir5UGW5LNq+g/ZygG9FIhP4Dx0v4AJBC8DKZ/IiYAAAAASUVORK5CYII=">
+                de automação para quem vende muito usando a ferramenta <a href="https://web.whatsapp.com/"
+                    target="_blank"><strong style="color: green;">whatsapp</strong></a>.
+            </h2>
+            <form method="POST">
+                <h1 class="center">Cadastro de Usuário</h1>
+                <div class="form-group">
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" class="form-control" placeholder="Email" />
+                    </div>
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome" />
+                    </div>
+                    <div>
+                        <label for="senha1">Senha</label>
+                        <input type="senha" id="senha1" name="senha1" class="form-control" placeholder="Senha" />
+                    </div>
+                    <div>
+                        <label for="senha2">Repetir senha</label>
+                        <input type="senha" id="senha2" name="senha2" class="form-control" placeholder="Senha" />
+                    </div>
+                    <button class="btn btn-primary" type="submit">Regitrar</button>
                 </div>
-                <div>
-                    <label for="nome">Nome</label>
-                    <input 
-                    type="text"
-                    id="nome"
-                    name="nome"
-                    class="form-control"
-                    placeholder="Nome"
-                    />
-                </div>
-                <div>
-                    <label for="senha1">Senha</label>
-                    <input 
-                    type="senha"
-                    id="senha1"
-                    name="senha1"
-                    class="form-control"
-                    placeholder="Senha"
-                    />
-                </div>
-                <div>
-                    <label for="senha2">Repetir senha</label>
-                    <input 
-                    type="senha"
-                    id="senha2"
-                    name="senha2"
-                    class="form-control"
-                    placeholder="Senha"
-                    />
-                </div>
-                <button class="btn btn-primary" type="submit">Regitrar</button>
-            </div>
-        </form>
-    </div>
-    {% with messages = get_flashed_messages(with_categories=True) %}
+            </form>
+        </div>
+        {% with messages = get_flashed_messages(with_categories=True) %}
         {% if messages %}
-            {% for category, message in messages %}
-            <div class="alert alert danger alert-dismissible fade show" role="alert"></div>    
-                {{ message }}
-            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>   
-            {% endfor %}
+        {% for category, message in messages %}
+        <div class="alert alert danger alert-dismissible fade show" role="alert"></div>
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        {% endfor %}
         {% endif %}
-    {% endwith %}
+        {% endwith %}
+    </div>
     <footer>
         <p for="">
             © 2023 - Todos os direitos reservados by - <a style="margin-left: 5px;"
@@ -520,4 +497,5 @@
         </p>
     </footer>
 </body>
+
 </html>

@@ -372,7 +372,7 @@
 </style>
 
 <body>
-    <header>
+    <header style="position: fixed;">
         <div class="menu">
             <div class="scrolled" style=" display: flex; width: 100%;">
                 <div class="flex-menu-top"
@@ -401,8 +401,7 @@
                     <img src="imagens/lupa.png" alt="">
                     <input type="text" name="" id="" placeholder="Pesquisa">
                 </label>
-                <div id="menuTop"
-                    style="position: fixed; background-color: #91A663; padding: 10px; border-radius: 15px;">
+                <div id="menuTop" style="position: fixed; background-color: #91A663; padding: 10px; border-radius: 15px;">
                     <div class="flex">
                         <nav>
                             <picture id="setasDuplas" style="display: block; margin: auto;">
@@ -446,94 +445,96 @@
             </div>
         </div>
     </header>
+    <div style="max-width: 1200px; margin: auto;">
     <picture id="logoZapSelling">
         <img src="imagens/logo Zap Selling.jpeg" alt="">
     </picture>
-    <!-- Esteira de aquecimento, está area é de extrema importacia para o cliente... atenção dobrada aqui. -->
-    <h2 id="topVH" style="padding: 15px;">
-        Gerenciador de Leads
-    </h2>
-    <!-- Updates -->
-    <section id="updates" style="border: 1px solid gray; padding: 15px; border-radius: 15px;">
-        <h2 id="topVH">
-            Updates
+        <!-- Esteira de aquecimento, está area é de extrema importacia para o cliente... atenção dobrada aqui. -->
+        <h2 id="topVH" style="padding: 15px;">
+            Gerenciador de Leads
         </h2>
-        <p>
-            Clique ou arraste seu arquivo e começe a modelar o suas respostas automaticas
-        </p>
-        <img src="imagens/updates.png" alt="">
-        <p>
-            Basta clicar no documento Add Media acima e depois carregar o seu ficheiro
-        </p>
-    </section>
-    <sention id="esteiraDeAquecimento" style="max-width: 500px; display: flex; margin-top: 15px;">
-        <div class="tGatilho">
-            <picture id="esteira">
-                <img src="imagens/texto.png" alt="">
-            </picture>
+        <!-- Updates -->
+        <section id="updates" style="border: 1px solid gray; padding: 15px; border-radius: 15px;">
+            <h2 id="topVH">
+                Updates
+            </h2>
             <p>
-                Mensagem de Texto
+                Clique ou arraste seu arquivo e começe a modelar o suas respostas automaticas
             </p>
-        </div>
-        <div class="tGatilho">
-            <picture id="esteira">
-                <img src="imagens/mensagem-de-audio.png" alt="">
-            </picture>
+            <img src="imagens/updates.png" alt="">
             <p>
-                Áudios
+                Basta clicar no documento Add Media acima e depois carregar o seu ficheiro
             </p>
-        </div>
-        <div class="tGatilho">
-            <picture id="esteira">
-                <img src="imagens/galeria.png" alt="">
-            </picture>
-            <p>
-                Mídias
-            </p>
-        </div>
-        <div class="tGatilho">
-            <picture id="esteira">
-                <img src="imagens/video.png" alt="">
-            </picture>
-            <p>
-                VIDEOS
-            </p>
-        </div>
-        <div class="tGatilho">
-            <picture id="esteira">
-                <img src="imagens/adicionar.png" alt="">
-            </picture>
-            <p>
-                Documentos
-            </p>
-        </div>
-        <div class="tGatilho">
-            <picture id="esteira">
-                <img src="imagens/funil.png" alt="">
-            </picture>
-            <p>
-                Funis
-            </p>
-        </div>
-    </sention>
-    <div id="pop">
-        <div class="flex">
-            <li>
-                Gratilho
-            </li>
-            <img src="imagens/adicionarDocumento.png" alt="" style="max-width: 35px;height: 35px;">
-        </div>
-        <div class="flex">
-            <li>
-                Gratilho
-            </li>
-            <img src="imagens/adicionarDocumento.png" alt="" style="max-width: 35px;height: 35px;">
-        </div>
-        <div class="flex">
-            <li>
-                Gratilho
-            </li>
-            <img src="imagens/adicionarDocumento.png" alt="" style="max-width: 35px;height: 35px;">
+        </section>
+        <sention id="esteiraDeAquecimento" style="max-width: 500px; display: flex; margin-top: 15px;">
+            <div class="tGatilho">
+                <picture id="esteira">
+                    <img src="imagens/texto.png" alt="">
+                </picture>
+                <p>
+                    Mensagem de Texto
+                </p>
+            </div>
+            <div class="tGatilho">
+                <picture id="esteira">
+                    <img src="imagens/mensagem-de-audio.png" alt="">
+                </picture>
+                <p>
+                    Áudios
+                </p>
+            </div>
+            <div class="tGatilho">
+                <picture id="esteira">
+                    <img src="imagens/galeria.png" alt="">
+                </picture>
+                <p>
+                    Mídias
+                </p>
+            </div>
+            <div class="tGatilho">
+                <picture id="esteira">
+                    <img src="imagens/video.png" alt="">
+                </picture>
+                <p>
+                    VIDEOS
+                </p>
+            </div>
+            <div class="tGatilho">
+                <picture id="esteira">
+                    <img src="imagens/adicionar.png" alt="">
+                </picture>
+                <p>
+                    Documentos
+                </p>
+            </div>
+            <div class="tGatilho">
+                <picture id="esteira">
+                    <img src="imagens/funil.png" alt="">
+                </picture>
+                <p>
+                    Funis
+                </p>
+            </div>
+        </sention>
+        <div id="pop">
+            <div class="flex">
+                <li>
+                    Gratilho
+                </li>
+                <img src="imagens/adicionarDocumento.png" alt="" style="max-width: 35px;height: 35px;">
+            </div>
+            <div class="flex">
+                <li>
+                    Gratilho
+                </li>
+                <img src="imagens/adicionarDocumento.png" alt="" style="max-width: 35px;height: 35px;">
+            </div>
+            <div class="flex">
+                <li>
+                    Gratilho
+                </li>
+                <img src="imagens/adicionarDocumento.png" alt="" style="max-width: 35px;height: 35px;">
+            </div>
         </div>
     </div>
     <footer>
