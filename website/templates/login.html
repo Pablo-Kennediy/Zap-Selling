@@ -375,16 +375,16 @@
 </hgroup>
 
 <body>
-    <header style="position: fixed;">
-       
+    <header style="position: fixed;">       
         
     </header>
-    <div style="max-width: 1200px; margin: auto;">
+    <div style="max-width: 1200px; margin: auto; padding-top: 25vh;">
     <picture id="logoZapSelling">
         <img src="imagens/logo Zap Selling.jpeg" alt="">
     </picture>
+    <div style="text-align: center; justify-content: baseline;">
         <div class="container">
-            <form method="POST" action="{{ url_for('auth.login') }}">
+            <form method="POST" action="{{ url_for('auth.login') }}" style="text-align: justify;">
                 <label for="email">Email:</label>
                 <input type="text" id="email" name="email" required>
 
@@ -393,48 +393,49 @@
 
                 <button type="submit">Login</button>
             </form>
-
+           <ul style="list-style: none;">
+            <a href='signup'>
+                <button>
+                    Cadatre-se
+                </button>
+            </a>
+            <a href='home'>
+                <button>
+                    Painel de controle
+                </button>
+            </a>
+           </ul>
         </div>
-        <script>
-            {% with messages = get_flashed_messages(with_categories = True) %}
-            {% if messages %}
-            {% for category, message in messages %}
-            {% if category == 'error' %}
-        </script>
-        <div class="alert alert danger alert-dismissible fade show" role="alert">
             <script>
-                { { message } }
+                {% with messages = get_flashed_messages(with_categories = True) %}
+                {% if messages %}
+                {% for category, message in messages %}
+                {% if category == 'error' %}
             </script>
-            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-        </div>
-        <script>
-            {% else %}
-        </script>
-        <div class="alert alert danger alert-dismissible fade show" role="alert">
+            <div class="alert alert danger alert-dismissible fade show" role="alert">
+                <script>
+                    { { message } }
+                </script>
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
             <script>
-                { { message } }
+                {% else %}
             </script>
-            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <div class="alert alert danger alert-dismissible fade show" role="alert">
+                <script>
+                    { { message } }
+                </script>
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+            <script>
+                {% endif %}
+                {% endfor %}
+                {% endif %}
+                {% endwith %}
+            </script>
         </div>
-        <script>
-            {% endif %}
-            {% endfor %}
-            {% endif %}
-            {% endwith %}
-        </script>
-    </div>
-    <a href='signup'>
-        <button>
-            Cadatre-se
-        </button>
-    </a>
-    <a href='home'>
-        <button>
-            Painel de controle
-        </button>
-    </a>
-    </div>
-    <footer>
+        </div>
+      <footer>
         <p for="">
             © 2023 - Todos os direitos reservados by - <a style="margin-left: 5px;"
                 href="https://www.instagram.com/ryanferreira_019/">RYAN
