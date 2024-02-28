@@ -4,569 +4,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <a  href="https://icons8.com/icon/GtCWRmkr5I2V/robo">Robo</a> icon by <a href="https://icons8.com">Icons8</a> -->
     <link rel="shortcut icon" href="imagens/icone logo Zap Selling.png" type="image/x-icon">
+    <link rel="stylesheet" href="../static/style.css">
     <title>ZAP SELLING</title>
 </head>
-<!-- Nota, qualquer atualização em css front resulta Control C + V cascata para todos HTML, para de esquecer por favor.  -->
-<style>
-    * {
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-
-    a {
-        position: relative;
-        text-decoration: none;
-        color: #91A663;
-    }
-
-    body {
-        background-color: #262223;
-        color: white;
-    }
-
-    .container {
-        max-width: 385px;
-        margin-top: 25px;
-        margin: auto;
-    }
-
-    .login {
-        margin: 15px;
-        background-color: #ffffff13;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(255, 0, 0, 0.014);
-    }
-
-    form {
-        padding: 15px;
-    }
-
-    header {
-        margin-bottom: 25px;
-    }
-
-    header picture {
-        width: 100%;
-    }
-
-    footer {
-        margin-top: 20vh;
-        text-align: center;
-        padding: 15px;
-    }
-
-    article {
-        display: inline-block;
-        max-width: 300px;
-    }
-
-    section {
-        display: block;
-        position: relative;
-        text-align: center;
-    }
-
-    section#updates {
-        margin: auto;
-        max-width: 400px;
-    }
-
-    section#updates img {
-        display: block;
-        max-width: 85px;
-        margin: auto;
-    }
-
-    section p {
-        max-width: 800px;
-        margin: auto;
-        padding: 5px;
-    }
-
-    section#comunidade img {
-        max-width: 285px;
-    }
-
-    section#config {
-        border-bottom: solid white 2px;
-    }
-
-    label {
-        padding: 10px;
-    }
-
-    button#deVoltaAoTopo {
-        position: fixed;
-        bottom: 0;
-        right: 0;
-    }
-
-    button#deVoltaAoTopo img {
-        max-width: 65px;
-    }
-
-    button#deVoltaAoTopo a {
-        position: absolute;
-    }
-
-    #newpage img {
-        max-width: 185px;
-    }
-
-    #newpageimgdois img {
-        max-width: 50px;
-    }
-
-    #taskList img {
-        float: right;
-        max-width: 300px;
-    }
-
-    #taskList div {
-        margin: auto;
-        max-width: 400px;
-        padding: 15px;
-    }
-
-    #diario img {
-        max-width: 200px;
-    }
-
-    #listaDeLeituras img {
-        max-width: 300px;
-    }
-
-    #listaDeLeituras h2>img {
-        max-width: 50px;
-    }
-
-    #addAPage img {
-        max-width: 85px;
-    }
-
-    #teamSpace img {
-        max-width: 185px;
-    }
-
-    #templates img {
-        max-width: 285px;
-    }
-
-    #import img {
-        max-width: 285px;
-    }
-
-    #trash img {
-        max-width: 285px;
-    }
-
-    section img {
-        transition-duration: 1s;
-        transition-property: transform;
-        transition-timing-function: ease-in-out;
-        transform-origin: 50% 50%;
-    }
-
-    img:hover {
-        transform: translate(-10px, 0);
-        transition-duration: 3s;
-    }
-
-    button {
-        margin: 15px;
-        border-radius: 25px;
-    }
-
-    ul li {
-        display: inline-block;
-        list-style: none;
-        margin: 15px;
-        padding: 10px;
-        border-radius: 15px;
-        border: 1px solid gray;
-    }
-
-    nav {
-        color: #fff;
-        max-width: 200px;
-    }
-
-    nav ul {
-        display: none;
-        padding: 25px;
-        border-right: solid 1px gray;
-    }
-
-    nav:hover ul {
-        display: block;
-        height: 100vh;
-    }
-
-
-    nav ul li {
-        list-style: none;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: #fff;
-    }
-
-    div#menuTop {
-        display: flexbox;
-    }
-
-    div#menuTop p {
-        border: solid gray 1px;
-        border-radius: 15px;
-        padding: 5px;
-        margin: 10px;
-    }
-
-    input {
-        max-width: 400px;
-        font-size: 16px;
-        border-radius: 25px;
-        padding: 5px;
-    }
-
-    #input img {
-        max-width: 35px;
-    }
-
-    picture#setasDuplas img {
-        display: block;
-        margin-top: 15px;
-        width: 35px;
-    }
-
-    #esteira img {
-        display: block;
-        width: 55px;
-    }
-
-    #first img {
-        float: right;
-        max-width: 150px;
-    }
-
-    #logoZapSelling img {
-        display: block;
-        margin: auto;
-        max-width: 120px;
-        border-radius: 360px;
-    }
-
-    section#addAPage div {
-        margin: 25px;
-        margin-top: 15px;
-        border: solid gray 2px;
-        padding: 10px;
-        border-radius: 15px;
-    }
-
-    li {
-        list-style: none;
-    }
-
-    div#pop li {
-        margin: 15px;
-        padding: 15px;
-        text-align: center;
-        max-width: 285px;
-        border: 2px solid gray;
-        border-radius: 15px;
-    }
-
-    div#comunidade2 {
-        display: flex;
-        margin: 15px;
-        border-top: 1px solid gray;
-        border-bottom: 1px solid gray;
-        padding: 15px;
-    }
-
-    div#comunidade2 img {
-        display: block;
-        max-width: 85px;
-    }
-
-    picture#feed img {
-        display: block;
-        margin: auto;
-        max-width: 90%;
-        border-radius: 15px;
-    }
-
-    picture img#setaDireitaMultimidia {
-        float: right;
-    }
-
-    picture#desenhoDeUmBancoDeBadosRoxo img {
-        display: block;
-        max-width: 155px;
-        margin: auto;
-        border-radius: 10px;
-    }
-
-    div.tGatilho {
-        max-width: 500px;
-        margin: auto;
-        margin-bottom: 15px;
-    }
-
-    .tGatilho {
-        display: flex;
-        margin: auto;
-        text-align: center;
-        border: solid gray 2px;
-        border-radius: 15px;
-        padding: 10px;
-    }
-
-    section#configurações {
-        border: solid 2px gray;
-        border-radius: 15px;
-        max-width: 500px;
-        margin: auto;
-    }
-
-    section#configurações p {
-        padding: 15px;
-        border-top: 1px solid gray;
-        text-align: justify;
-    }
-
-    .flex {
-        display: flex;
-    }
-
-    .flex div {
-        margin: 15px;
-    }
-
-    .flex input {
-        margin: 15px;
-    }
-
-    .menu {
-        position: fixed;
-        background-color: black;
-        padding: 15px;
-        width: 100%;
-        transition: top 0.3s ease-in-out;
-    }
-
-    header {
-        height: 50px;
-        /* Altere para a altura do seu menu */
-    }
-
-    .menu.scrolled {
-        top: -50px;
-        /* Altere para a altura do seu menu */
-    }
-</style>
-
-<body>
+  <body>
     <header style="position: fixed;">
-        <div class="menu">
-            <div class="scrolled" style=" display: flex; width: 100%;">
-                <div class="flex-menu-top"
-                    style="display: flex; align-items: center;text-align: center; max-width: 900px; margin: auto;">
-                    <a href="navegação.html">
-                        <p
-                            style="border: 2px solid gray; border-radius: 15px; margin: 5px; max-width: 85px;padding: 5px;">
-                            HOME
-                        </p>
-                    </a>
-                    <a href="Gerenciador de Leads.html">
-                        <p
-                            style="border: 2px solid gray; border-radius: 15px; margin: auto; display: flex; max-width: 440px; padding: 5px;">
-                            AUTOMAÇÃO DE MENSAGENS
-                        </p>
-                    </a>
-                    <p
-                        style="border: 2px solid gray; border-radius: 15px; margin: 5px; display: block; max-width: 285px; padding: 5px;">
-                        <a href="https://api.whatsapp.com/send?phone=5519986030166&text=TESTE%0ASuporte%20!!!%0ABom%20dia,%20%0ATenho%20um%20grave%20problema%20com%20a%20plataforma%20e%20preciso%20apoio%20imediato."
-                            target="_blank">
-                            SUPORTE
-                        </a>
-                    </p>
-                </div>
-                <label id="input" for="" style="margin: 5px;">
-                    <img src="imagens/lupa.png" alt="">
-                    <input type="text" name="" id="" placeholder="Pesquisa">
-                </label>
-                <div id="menuTop" style="position: fixed; background-color: #91A663; padding: 10px; border-radius: 15px;">
-                    <div class="flex">
-                        <nav>
-                            <picture id="setasDuplas" style="display: block; margin: auto;">
-                                <img src="imagens/menu.png" alt="">
-                            </picture>
-                            <ul style="background-color: #91A663;border-radius: 15px;">
-                                <li style="border:  2px solid black;">
-                                    <a href="guia.html">
-                                        Ajuda
-                                    </a>
-                                </li>
-                                <li style="border:  2px solid black;">
-                                    <a href="membros.html">
-                                        Comunidade
-                                    </a>
-                                </li>
-                                <li style="border:  2px solid black;">
-                                    <a href="configurações.html">
-                                        Configuração
-                                    </a>
-                                </li>
-                                <li style="border:  2px solid black;">
-                                    <a href="heatingMat.html">
-                                        Historico
-                                    </a>
-                                </li>
-                                <li style="border:  2px solid black;">
-                                    <a href="templates.html">
-                                        Modelos
-                                    </a>
-                                </li>
-                                <li style="border:  2px solid black;">
-                                    <a href="perfil.html">
-                                        Minha Conta
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <div style="max-width: 1200px; margin: auto;">
-    <picture id="logoZapSelling">
-        <img src="imagens/logo Zap Selling.jpeg" alt="">
-    </picture>
-        <h2>
-            Como sugiu o Zap Selling ?
-        </h2>
-        <p>
-            Ryan era um especialista em vendas B2B que vivia atormentado por uma ideia. Ele tinha uma visão
-            de uma
-            plataforma que automatizaria o envio de mensagens no WhatsApp Web para potenciais clientes. Ele
-            sabia
-            que essa plataforma poderia revolucionar o seu negócio, mas não tinha as habilidades técnicas
-            para
-            desenvolvê-la.
-        </p>
-        <p>
-            Ele escolheu a PK Digital Products, uma empresa com uma equipe de programadores, gestores de
-            tráfego e
-            designers
-        </p>
-        <div class="flex" style="padding: 15px;">
-            <picture id="feed">
-                <img src="imagens/feed1.jpg" alt="" style="max-width: 500px;">
-            </picture>
-            <p style="padding: 15px;">
-                Em sua busca incessante, Ryan cruzou o caminho da PK Digital Products, uma empresa com uma equipe de
-                programadores, gestores de tráfego e designers talentosos e experientes. A sintonia foi imediata. A
-                equipe da PK Digital Products se conectou com a visão de Ryan e se comprometeu a dar vida à sua ideia,
-                construindo a plataforma dos seus sonhos.
+      <div class="menu">
+        <div class="scrolled" style=" display: flex; width: 100%;">
+          <div class="flex-menu-top" style="display: flex; align-items: center;text-align: center; max-width: 900px; margin: auto;">
+            <a href="navegação.html"><p style="border: 2px solid gray; border-radius: 15px; margin: 5px; max-width: 85px;padding: 5px;">HOME</p></a>
+            <a href="Gerenciador de Leads.html"><p style="border: 2px solid gray; border-radius: 15px; margin: auto; display: flex; max-width: 440px; padding: 5px;">AUTOMAÇÃO DE MENSAGENS</p></a>
+            <p style="border: 2px solid gray; border-radius: 15px; margin: 5px; display: block; max-width: 285px; padding: 5px;">
+              <a href="https://api.whatsapp.com/send?phone=5519986030166&text=TESTE%0ASuporte%20!!!%0ABom%20dia,%20%0ATenho%20um%20grave%20problema%20com%20a%20plataforma%20e%20preciso%20apoio%20imediato." target="_blank">SUPORTE</a>
             </p>
+          </div>
+          <label id="input" for="" style="margin: 5px;">
+            <img src="imagens/lupa.png" alt="" />
+            <input type="text" name="" id="" placeholder="Pesquisa" />
+          </label>
+          <div id="menuTop" style="position: fixed; background-color: #91A663; padding: 10px; border-radius: 15px;">
+            <div class="flex">
+              <nav>
+                <picture id="setasDuplas" style="display: block; margin: auto;">
+                  <img src="imagens/menu.png" alt="" />
+                </picture>
+                <ul style="background-color: #91A663;border-radius: 15px;">
+                  <li style="border:  2px solid black;">
+                    <a href="guia.html">Ajuda</a>
+                  </li>
+                  <li style="border:  2px solid black;">
+                    <a href="membros.html">Comunidade</a>
+                  </li>
+                  <li style="border:  2px solid black;">
+                    <a href="configurações.html">Configuração</a>
+                  </li>
+                  <li style="border:  2px solid black;">
+                    <a href="heatingMat.html">Historico</a>
+                  </li>
+                  <li style="border:  2px solid black;">
+                    <a href="templates.html">Modelos</a>
+                  </li>
+                  <li style="border:  2px solid black;">
+                    <a href="perfil.html">Minha Conta</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
         </div>
-        <aside>
-            <div class="flex" style="border-top: 1px solid gray;">
-                <div>
-                    <h2>
-                        Capítulo 1: A semente da inovação
-                    </h2>
-                    <p>
-                        Ryan, um especialista em vendas B2B, era um homem com uma mente inquieta. Uma ideia persistente
-                        o
-                        acompanhava, a visão de uma plataforma inovadora que automatizaria o envio de mensagens no
-                        WhatsApp
-                        Web
-                        para prospectos. Ele vislumbrava o potencial transformador dessa ferramenta para o seu negócio,
-                        mas
-                        as
-                        habilidades técnicas para dar vida à sua visão lhe faltavam.
-                    </p>
-                    <h2>
-                        Capítulo 3: A jornada da criação
-                    </h2>
-                    <p>
-                        A equipe da PK Digital Products mergulhou de cabeça no projeto. Através de um trabalho árduo e
-                        dedicado,
-                        dedicando semanas de desenvolvimento meticuloso, eles superaram as expectativas de Ryan e
-                        criaram
-                        uma
-                        plataforma inovadora que ia além da sua visão inicial.
-                    </p>
-                    <h2>
-                        Capítulo 4: O nascimento do Zap Selling
-                    </h2>
-                    <p>
-                        Assim, nasceu o Zap Selling, uma plataforma robusta e intuitiva que revolucionou a forma como
-                        Ryan e
-                        outros profissionais de vendas se conectam com seus clientes. A plataforma automatizada de
-                        mensagens
-                        do
-                        WhatsApp Web permitiu um alcance mais amplo, um contato mais eficiente e um processo de vendas
-                        mais
-                        streamlined e eficaz.
-                    </p>
-                    <p>
-                        A história do Zap Selling é uma prova inspiradora do poder da visão, da colaboração e da busca
-                        incessante pela inovação.
-                    </p>
-                    <p>
-                        O WhatsApp Web permite aos usuários, acessarem suas mensagens e conversas pelo computador,
-                        tornando
-                        mais
-                        simples responder mensagens e gerenciar discussões enquanto usam o computador. <br> Essa
-                        conveniência
-                        facilita a comunicação e mantém os usuários conectados de forma mais eficaz.
-                    </p>
-                </div>
-                <div style="padding-left: 25px;">
-                    <h1 style="font-size: medium;">
-                        A história por trás do Zap Selling: Uma visão transformadora em realidade
-                    </h1>
-                    <!-- <video src="videos/ZAP SELLING (2).mp4
+      </div>
+    </header>
+    <div style="max-width: 1200px; margin: auto; margin-top: 15px; display: block;">
+      <picture id="logoZapSelling">
+        <img src="imagens/logo Zap Selling.jpeg" alt="" />
+      </picture>
+      <h2>Como sugiu o Zap Selling ?</h2>
+      <p>Ryan era um especialista em vendas B2B que vivia atormentado por uma ideia. Ele tinha uma visão de uma plataforma que automatizaria o envio de mensagens no WhatsApp Web para potenciais clientes. Ele sabia que essa plataforma poderia revolucionar o seu negócio, mas não tinha as habilidades técnicas para desenvolvê-la.</p>
+      <p>Ele escolheu a PK Digital Products, uma empresa com uma equipe de programadores, gestores de tráfego e designers</p>
+      <div class="flex" style="padding: 15px;">
+        <picture id="feed">
+          <img src="imagens/feed1.jpg" alt="" style="max-width: 500px;" />
+        </picture>
+        <p style="padding: 15px;">Em sua busca incessante, Ryan cruzou o caminho da PK Digital Products, uma empresa com uma equipe de programadores, gestores de tráfego e designers talentosos e experientes. A sintonia foi imediata. A equipe da PK Digital Products se conectou com a visão de Ryan e se comprometeu a dar vida à sua ideia, construindo a plataforma dos seus sonhos.</p>
+      </div>
+      <aside>
+        <div class="flex" style="border-top: 1px solid gray;">
+          <div>
+            <h2>Capítulo 1: A semente da inovação</h2>
+            <p>Ryan, um especialista em vendas B2B, era um homem com uma mente inquieta. Uma ideia persistente o acompanhava, a visão de uma plataforma inovadora que automatizaria o envio de mensagens no WhatsApp Web para prospectos. Ele vislumbrava o potencial transformador dessa ferramenta para o seu negócio, mas as habilidades técnicas para dar vida à sua visão lhe faltavam.</p>
+            <h2>Capítulo 3: A jornada da criação</h2>
+            <p>A equipe da PK Digital Products mergulhou de cabeça no projeto. Através de um trabalho árduo e dedicado, dedicando semanas de desenvolvimento meticuloso, eles superaram as expectativas de Ryan e criaram uma plataforma inovadora que ia além da sua visão inicial.</p>
+            <h2>Capítulo 4: O nascimento do Zap Selling</h2>
+            <p>Assim, nasceu o Zap Selling, uma plataforma robusta e intuitiva que revolucionou a forma como Ryan e outros profissionais de vendas se conectam com seus clientes. A plataforma automatizada de mensagens do WhatsApp Web permitiu um alcance mais amplo, um contato mais eficiente e um processo de vendas mais streamlined e eficaz.</p>
+            <p>A história do Zap Selling é uma prova inspiradora do poder da visão, da colaboração e da busca incessante pela inovação.</p>
+            <p>
+              O WhatsApp Web permite aos usuários, acessarem suas mensagens e conversas pelo computador, tornando mais simples responder mensagens e gerenciar discussões enquanto usam o computador. <br /> Essa conveniência facilita a comunicação e mantém os usuários conectados de forma mais eficaz.
+            </p>
+          </div>
+          <div style="padding-left: 25px;">
+            <h1 style="font-size: medium;">A história por trás do Zap Selling: Uma visão transformadora em realidade</h1>
+            <!--    <video src="videos/ZAP SELLING (2).mp4
                         " autoplay muted loop controls="none"
                         style="width: 100%; border: solid 3px gray; border-radius: 15px; box-shadow: 0px 3px 15px 0px;">
-                    </video> -->
-                    <p>
-                        No geral, o WhatsApp Web é uma ferramenta poderosa que permite que os usuários do WhatsApp
-                        tenham
-                        uma
-                        experiência mais completa e produtiva.
-                    </p>
-                    <p>
-                        A equipe da PK Digital Products ouviu atentamente a ideia de Ryan e se comprometeu a torná-la
-                        realidade.
-                        Eles trabalharam duro por semanas e, finalmente, desenvolveram uma plataforma que superou todas
-                        as
-                        expectativas de Ryan.
-                    </p>
-                </div>
-            </div>
-            <div id="comunidade2">
-                <img src="imagens/pirata.png" alt="" style="display: block; margin: auto;">
-                <img src="imagens/genero-neutro.png" alt="" style="display: block; margin: auto;">
-                <img src="imagens/homem.png" alt="" style="display: block; margin: auto;">
-            </div>
-        </aside>
+                    </video>    -->
+            <p>No geral, o WhatsApp Web é uma ferramenta poderosa que permite que os usuários do WhatsApp tenham uma experiência mais completa e produtiva.</p>
+            <p>A equipe da PK Digital Products ouviu atentamente a ideia de Ryan e se comprometeu a torná-la realidade. Eles trabalharam duro por semanas e, finalmente, desenvolveram uma plataforma que superou todas as expectativas de Ryan.</p>
+          </div>
+        </div>
+        <div id="comunidade2">
+          <img src="imagens/pirata.png" alt="" style="display: block; margin: auto;" />
+          <img src="imagens/genero-neutro.png" alt="" style="display: block; margin: auto;" />
+          <img src="imagens/homem.png" alt="" style="display: block; margin: auto;" />
+        </div>
+      </aside>
     </div>
     <footer>
-        <p>
-            © 2023 - Todos os direitos reservados by - <a style="margin-left: 5px;"
-                href="https://www.instagram.com/ryanferreira_019/" target="_blank">RYAN
-                FERREIRA</a> & <a href="https://www.instagram.com/pk_digital_products/" target="_blank">PK DIGITAL
-                PRODUCTS</a>
-        </p>
+      <p>
+        © 2023 - Todos os direitos reservados by - <a style="margin-left: 5px;" href="https://www.instagram.com/ryanferreira_019/" target="_blank">RYAN FERREIRA</a> & <a href="https://www.instagram.com/pk_digital_products/" target="_blank">PK DIGITAL PRODUCTS</a>
+      </p>
     </footer>
-</body>
+  </body>
+</html>
