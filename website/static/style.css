@@ -32,10 +32,6 @@ form {
     padding: 15px;
 }
 
-header {
-    margin-bottom: 25px;
-}
-
 header picture {
     width: 100%;
 }
@@ -53,7 +49,6 @@ article {
 
 section {
     display: block;
-    position: relative;
     text-align: center;
 }
 
@@ -346,11 +341,6 @@ section#configurações p {
     padding: 15px;
     width: 100%;
     transition: top 0.3s ease-in-out;
-}
-
-header {
-    height: 50px;
-    /* Altere para a altura do seu menu */
 }
 
 .menu.scrolled {
